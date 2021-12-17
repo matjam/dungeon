@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+  "name": "dungeon",
+  "version-semver": "0.0.0",
+  "dependencies": [
+    "sfml",
+    "spdlog",
+    "entt",
+    "boost"
+  ]
+}
