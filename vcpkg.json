@@ -6,6 +6,9 @@
     "sfml",
     "spdlog",
     "entt",
-    "boost"
+    "boost",
+    "imgui",
+    "imgui-sfml",
+    "opengl"
   ]
 }
