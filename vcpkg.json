@@ -9,6 +9,15 @@
     "boost",
     "imgui",
     "imgui-sfml",
-    "opengl"
+    "libtcod",
+    "nlohmann-json",
+    "opengl",
+    "glew",
+    {
+      "name": "glad",
+      "features": [
+        "gl-api-32"
+      ]
+    }
   ]
 }

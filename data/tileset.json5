@@ -1,0 +1,74 @@
+{
+  "file": "data/tiny_dungeon_world.png",
+  "wall": {
+    // number of variants for this type of thing
+    "variants": 4,
+    // how far to step forward for the next set of these
+    "variant_step": 16,
+    // each offset will be defined in the final map as WALL_{label}; for example WALL_BOTTOM_DECORATED will point
+    // to offset 4.
+    "offsets": {
+      "bottom": {
+        "offset": 0,
+        "description": "standard wall bottom"
+      },
+      "bottom_1": {
+        "offset": 1,
+        "description": "standard wall variant"
+      },
+      "bottom_2": {
+        "offset": 2,
+        "description": "standard wall variant 2"
+      },
+      "bottom_3": {
+        "offset": 3,
+        "description": "standard wall variant 3"
+      },
+      "bottom_decorated": {
+        "offset": 4,
+        "description": "decorated wall"
+      },
+      "bottom_damaged": {
+        "offset": 5,
+        "description": "damaged wall"
+      },
+      "top": {
+        "offset": 6,
+        "description": "standard wall top"
+      },
+      "top_1": {
+        "offset": 7,
+        "description": "standard wall variant"
+      },
+      "top_2": {
+        "offset": 8,
+        "description": "standard wall variant 2"
+      },
+      "top_3": {
+        "offset": 9,
+        "description": "standard wall variant 3"
+      },
+      "top_decorated": {
+        "offset": 10,
+        "description": "decorated wall"
+      },
+      "top_damaged": {
+        "offset": 11,
+        "description": "damaged wall"
+      }
+    }
+  },
+  "stair": {
+    // number of variants for this type of thing
+    "variants": 4,
+    // how far to step forward for the next set of these
+    "variant_step": 16,
+    "offsets": {
+      "down": 12,
+      "up": 13
+    }
+  },
+  "floor": {
+    variants:
+  }
+}

@@ -1,7 +1,6 @@
-#include "common.h"
+#include "engine/GameEngine.h"
 
-int main(int argc, char **argv)
-{
+int main() {
     auto engine = GameEngine();
-    return engine.run(argc, argv);
+    return engine.run();
 }

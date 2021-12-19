@@ -3,42 +3,132 @@
 //
 
 #include "GameEngine.h"
+#include <stdlib.h>
+#include "util/Util.h"
 
-GameEngine::GameEngine() {
 
-}
+GameEngine::GameEngine() : m_window(sf::VideoMode(1920, 1080), "Game") {
+    m_window.setVerticalSyncEnabled(true);
+    ImGui::SFML::Init(m_window);
 
-int GameEngine::run(int argc, char **argv) {
-    sf::RenderWindow window(sf::VideoMode(640, 480), "ImGui + SFML = <3");
-    window.setFramerateLimit(60);
-    ImGui::SFML::Init(window);
+    m_console = spdlog::stdout_color_mt("console");
+    spdlog::set_default_logger(m_console);
+    spdlog::set_pattern("[%^%8l%$] [%s/%!:%#] %v");
+    m_console->set_level(spdlog::level::trace);
 
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    SPDLOG_INFO("intializing GameEngine");
 
-    sf::Clock deltaClock;
-    while (window.isOpen()) {
-        sf::Event event;
-        while (window.pollEvent(event)) {
-            ImGui::SFML::ProcessEvent(window, event);
-
-            if (event.type == sf::Event::Closed) {
-                window.close();
-            }
-        }
-
-        ImGui::SFML::Update(window, deltaClock.restart());
-
-        ImGui::Begin("Hello, world!");
-        ImGui::Button("Look at this pretty button");
-        ImGui::End();
-
-        window.clear();
-        window.draw(shape);
-        ImGui::SFML::Render(window);
-        window.display();
+    m_basePath = getEnv("BASEPATH");
+    if (!m_basePath.empty()) {
+        SPDLOG_INFO("BASEPATH set: {}", m_basePath);
     }
 
+    if (!m_font.loadFromFile("data/square.ttf")) {
+        SPDLOG_CRITICAL("unable to load game font file");
+    }
+
+    m_fpsDisplayText.setFont(m_font);
+    m_fpsDisplayText.setCharacterSize(16);
+    m_fpsDisplayText.setFillColor(sf::Color::Yellow);
+}
+
+void GameEngine::renderThread() {
+    SPDLOG_INFO("renderThread starting");
+
+    m_window.setActive(true);
+
+    sf::Clock deltaClock;
+    sf::Clock clock;
+    sf::Clock renderTime;
+    while (m_running) {
+        ImGui::SFML::Update(m_window, deltaClock.restart());
+        m_window.clear();
+        ImGui::SFML::Render(m_window);
+        m_renderMutex.lock();
+
+        renderTime.restart();
+        m_world.render(m_window);
+        m_renderTime = renderTime.restart().asSeconds();
+
+        if (m_fpsDisplayEnabled) {
+            float fpsTime = clock.restart().asSeconds();
+            float fps = 1.f / fpsTime;
+            m_fpsDisplayText.setString(fmt::format("FPS {}", fps));
+            m_window.draw(m_fpsDisplayText);
+        }
+
+        m_renderMutex.unlock();
+        m_window.display();
+    }
     ImGui::SFML::Shutdown();
+
+    SPDLOG_INFO("renderThread exiting");
+}
+
+void GameEngine::updateThread() {
+    SPDLOG_INFO("updateThread starting");
+
+    while (m_running) {
+        sf::sleep(sf::seconds(1));
+        m_renderMutex.lock();
+        m_world.update();
+        m_renderMutex.unlock();
+    }
+
+    SPDLOG_INFO("updateThread exiting");
+}
+
+void GameEngine::eventHandlerThread() {
+    SPDLOG_INFO("eventHandlerThread starting");
+    sf::Event event{};
+    while (m_running) {
+        while (m_window.pollEvent(event)) {
+            ImGui::SFML::ProcessEvent(m_window, event);
+            if (event.type == sf::Event::Closed) {
+                SPDLOG_INFO("received closed event for main window");
+                m_running = false;
+            }
+        }
+        sf::sleep(sf::milliseconds(50));
+    }
+    SPDLOG_INFO("eventHandlerThread exiting");
+}
+
+void GameEngine::renderTimeThread() {
+    SPDLOG_INFO("renderTimeThread starting");
+
+    while (m_running) {
+        sf::sleep(sf::seconds(1));
+        SPDLOG_INFO("render time: {}", m_renderTime);
+    }
+
+    SPDLOG_INFO("renderTimeThread exiting");
+}
+
+int GameEngine::run() {
+    SPDLOG_INFO("GameEngine starting");
+
+    m_world.load();
+
+    // launch the renderThread.
+    sf::Thread thread1([&]() { renderThread(); });
+    thread1.launch();
+
+    // launch the updateThread.
+    sf::Thread thread2([&]() { updateThread(); });
+    thread2.launch();
+
+    // launch the renderTimeThread
+    sf::Thread thread3([&]() { renderTimeThread(); });
+    thread3.launch();
+
+    m_window.setActive(false);
+    eventHandlerThread(); // it's not really a thread; it's running on the main thread
+    thread3.wait();
+    thread2.wait();
+    thread1.wait();
+    m_window.close();
+
+    SPDLOG_INFO("GameEngine exiting");
     return EXIT_SUCCESS;
 }
