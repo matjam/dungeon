@@ -13,7 +13,7 @@ void World::update() {
 }
 
 void World::load() {
-    m_map.load();
+    m_map.create(sf::Vector2u{120, 120});
     m_map.setScale(5.0f, 5.0f);
     m_map.update();
 }

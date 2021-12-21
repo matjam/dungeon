@@ -6,11 +6,9 @@
 
 #include <string>
 #include <nlohmann/json.hpp>
-#include <iostream>
-#include <fstream>
+#include <cmrc/cmrc.hpp>
 
-#define TILE_SPAN 32 // tiles per row
-#define ZIP_PASSWORD "X!u/+eDU+?b9s%rA"
+CMRC_DECLARE(dungeon);
 
 using json = nlohmann::json;
 
@@ -26,22 +24,22 @@ std::map<std::string, sf::Vector2f> &TilesetManager::getTilePositions(const std:
     return m_tilesets.at(name).tilePositions;
 }
 
-// Will open a manifest file and then load a TileSet based on the configuration in that file. Should be faster than
+// Will open a manifest file and then create a TileSet based on the configuration in that file. Should be faster than
 // trying to generate the image using lots of little files and we can finesse the names of things.
 bool TilesetManager::loadManifest(const std::string &manifestPath) {
-    json j;
-    std::ifstream input(manifestPath, std::ios::binary);
-    if (!input.is_open()) {
-        SPDLOG_CRITICAL("unable to open manifest {}", manifestPath);
-        return false;
-    }
-    input >> j;
+    auto fs = cmrc::dungeon::get_filesystem();
 
-    // load the image used for all the tiles in this tileset
+    auto manifestData = fs.open(manifestPath);
+    auto manifest = std::string(manifestData.begin(), manifestData.end());
+    json j = json::parse(manifest);
+
+    // create the image used for all the tiles in this tileset
     m_images.emplace_back();
     sf::Image &image = m_images.back();
-    if (!image.loadFromFile(j["file"])) {
-        SPDLOG_CRITICAL("unable to load image {} in manifest {}", j["file"], manifestPath);
+
+    auto imageData = fs.open(j["file"]);
+    if (!image.loadFromMemory(imageData.begin(), imageData.size())) {
+        SPDLOG_CRITICAL("unable to create image {} in manifest {}", j["file"], manifestPath);
         return false;
     }
 
@@ -51,7 +49,7 @@ bool TilesetManager::loadManifest(const std::string &manifestPath) {
     texture.create(image.getSize().x, image.getSize().y);
     texture.loadFromImage(image);
 
-    // load the definitions of each tile into the tileset
+    // create the definitions of each tile into the tileset
     for (auto &[setName, setConfig]: j["sets"].items()) {
         sf::Vector2u tileSize{setConfig["size"]["width"], setConfig["size"]["height"]};
 
@@ -59,7 +57,7 @@ bool TilesetManager::loadManifest(const std::string &manifestPath) {
         auto &tileSet = m_tilesets.at(setName);
 
         tileSet.tileSize = tileSize;
-        tileSet.textureIndex = m_textures.size() - 1;
+        tileSet.textureIndex = (unsigned int) m_textures.size() - 1;
 
         // iterate through the tiles listed in the JSON and set their positions.
         for (auto &[tileName, tile]: setConfig["tiles"].items()) {

@@ -24,7 +24,7 @@ GameEngine::GameEngine() : m_window(sf::VideoMode(1920, 1080), "Game") {
     }
 
     if (!m_font.loadFromFile("data/square.ttf")) {
-        SPDLOG_CRITICAL("unable to load game font file");
+        SPDLOG_CRITICAL("unable to create game font file");
     }
 
     m_fpsDisplayText.setFont(m_font);

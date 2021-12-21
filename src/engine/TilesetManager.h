@@ -26,7 +26,7 @@ public:
     TilesetManager(TilesetManager const &) = delete; // disable copying
     TilesetManager &operator=(TilesetManager const &) = delete; // disable assignment
 
-    // load a Tileset containing multiple Tile sets using a manifest JSON.
+    // create a Tileset containing multiple Tile sets using a manifest JSON.
     bool loadManifest(const std::string &manifestPath);
 
     sf::Texture &getTexture(const std::string &tilesetName);

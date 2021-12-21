@@ -18,7 +18,7 @@ private:
     sf::Font m_font;
     std::string m_basePath;
     sf::Text m_fpsDisplayText;
-    World m_world{120, 120};
+    World m_world;
 
 public:
     GameEngine();

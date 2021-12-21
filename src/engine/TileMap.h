@@ -15,35 +15,26 @@
  */
 
 struct Tile {
-    enum Type : unsigned int {
+    enum class Type : sf::Uint8 {
         FLOOR,
         WALL,
         DOOR,
-        OTHER
+        STAIR_DOWN,
+        STAIR_UP,
     };
 
-    enum Style : unsigned int {
-        STONE,
-        SEWER,
-        CRYPT,
-        CAVE
-    };
-
-    Type type{WALL};
-    Style style{STONE};
-    std::string other;
+    Tile::Type type{Type::WALL};
 
     // This is written in the update() pass to map the specific tile from the tilemap to the vertex array that renders.
     std::string baseTileName{"wall_stone_v_a"}; // name of the tile in the tileset to use when rendering
-    std::string topTileName{"none"};
 };
 
 class TileMap : public sf::Drawable, public sf::Transformable {
 private:
     sf::VertexArray m_baseLayer;
     sf::VertexArray m_topLayer;
-    sf::Int32 m_width;
-    sf::Int32 m_height;
+    sf::Uint32 m_width;
+    sf::Uint32 m_height;
     std::vector<Tile> m_tiles;
     Tile m_outOfBoundsTile{};
 
@@ -51,18 +42,15 @@ private:
 
     void updateVertex(sf::VertexArray &va, sf::Vector2u pos, Tileset &ts, std::string &tileName) const;
 
-    void updateTileNames(Tile &tile, sf::Vector2u position);
+    void updateTileNames(Tile &tile, sf::Vector2i position);
 
 public:
-    TileMap() = delete;
+    TileMap() = default;
 
     TileMap(const TileMap &) = delete; // disable copying
     TileMap &operator=(TileMap const &) = delete; // disable assignment
 
-    explicit TileMap(sf::Vector2u mapSize) : m_tiles(mapSize.x * mapSize.y), m_width{(sf::Int32) mapSize.x},
-                                             m_height{(sf::Int32) mapSize.y} {}
-
-    bool load();
+    bool create(sf::Vector2u mapSize);
 
     // update() only needs to be called when you've finished making changes to the TileMap, it should not need to be
     // called every frame. It will scan through all of the tiles and configure the tileEntityName to the correct type
@@ -74,6 +62,8 @@ public:
     void setTileType(sf::Vector2i position, Tile::Type t);
 
     Tile &getTile(sf::Vector2i position);
+
+    Tile::Type getTileType(sf::Vector2i position);
 
 };
 

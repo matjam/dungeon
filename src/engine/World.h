@@ -16,7 +16,7 @@ private:
     TileMap m_map;
 
 public:
-    World(unsigned int width, unsigned int height) : m_map(sf::Vector2u{width, height}) {};
+    World() = default;
 
     World(const World &) = delete; // disable copying
     World &operator=(World const &) = delete; // disable assignment
