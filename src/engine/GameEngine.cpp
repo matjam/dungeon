@@ -9,11 +9,11 @@
 
 GameEngine::GameEngine() : m_window(sf::VideoMode(1920, 1080), "Game") {
     m_window.setVerticalSyncEnabled(true);
-    ImGui::SFML::Init(m_window);
+//    ImGui::SFML::Init(m_window);
 
     m_console = spdlog::stdout_color_mt("console");
     spdlog::set_default_logger(m_console);
-    spdlog::set_pattern("[%^%8l%$] [%s/%!:%#] %v");
+//    spdlog::set_pattern("[%^%8l%$] [%s/%!:%#] %v");
     m_console->set_level(spdlog::level::trace);
 
     SPDLOG_INFO("intializing GameEngine");
@@ -41,14 +41,12 @@ void GameEngine::renderThread() {
     sf::Clock clock;
     sf::Clock renderTime;
     while (m_running) {
-        ImGui::SFML::Update(m_window, deltaClock.restart());
         m_window.clear();
-        ImGui::SFML::Render(m_window);
         m_renderMutex.lock();
 
         renderTime.restart();
         m_world.render(m_window);
-        m_renderTime = renderTime.restart().asSeconds();
+        m_renderTime = renderTime.restart().asMicroseconds();
 
         if (m_fpsDisplayEnabled) {
             float fpsTime = clock.restart().asSeconds();
@@ -60,7 +58,6 @@ void GameEngine::renderThread() {
         m_renderMutex.unlock();
         m_window.display();
     }
-    ImGui::SFML::Shutdown();
 
     SPDLOG_INFO("renderThread exiting");
 }
@@ -83,10 +80,13 @@ void GameEngine::eventHandlerThread() {
     sf::Event event{};
     while (m_running) {
         while (m_window.pollEvent(event)) {
-            ImGui::SFML::ProcessEvent(m_window, event);
             if (event.type == sf::Event::Closed) {
                 SPDLOG_INFO("received closed event for main window");
                 m_running = false;
+            }
+            if (event.type == sf::Event::Resized) {
+                sf::FloatRect visibleArea(0, 0, (float) event.size.width, (float) event.size.height);
+                m_window.setView(sf::View(visibleArea));
             }
         }
         sf::sleep(sf::milliseconds(50));
@@ -99,7 +99,7 @@ void GameEngine::renderTimeThread() {
 
     while (m_running) {
         sf::sleep(sf::seconds(1));
-        SPDLOG_INFO("render time: {}", m_renderTime);
+        SPDLOG_INFO("frametime: {:0.1f}ms", (float) m_renderTime / 1000);
     }
 
     SPDLOG_INFO("renderTimeThread exiting");

@@ -3,35 +3,88 @@
 //
 
 #include "TileMap.h"
-#include <filesystem>
+#include <utility>
+#include <fmt/format.h>
+
+void TileMap::updateTileNames(Tile &tile, sf::Vector2u position) {
+    std::string type;
+    std::string style;
+
+    switch (tile.type) {
+        case Tile::WALL:
+            type = "wall";
+            break;
+        case Tile::FLOOR:
+            type = "floor";
+            break;
+        case Tile::DOOR:
+            type = "floor";
+            break;
+    }
+
+    switch (tile.style) {
+        case Tile::STONE:
+            style = "stone";
+            break;
+        case Tile::SEWER:
+            style = "sewer";
+            break;
+        case Tile::CRYPT:
+            style = "crypt";
+            break;
+        case Tile::CAVE:
+            style = "cave";
+            break;
+    }
+
+
+}
 
 void TileMap::update() {
+    Tileset &ts = TilesetManager::get().getTileset("world");
+
     // populate the vertex array, with one quad per tile
     for (sf::Uint32 i = 0; i < (sf::Uint32) m_width; ++i) {
         for (sf::Uint32 j = 0; j < (sf::Uint32) m_height; ++j) {
             // get the current tile
             Tile tile = m_tiles.at(i + j * m_width);
 
-            // find its position in the tileset texture
-            sf::Uint32 tu = tile.textureIndex % (m_tileset.getSize().x / m_tileSize.x);
-            sf::Uint32 tv = tile.textureIndex / (m_tileset.getSize().x / m_tileSize.x);
+            // update the tileNames for this tile
+            updateTileNames(tile, sf::Vector2u{i, j});
 
-            // get a pointer to the current tile's quad
-            sf::Vertex *quad = &m_vertices[(i + j * m_width) * 4];
-
-            // define its 4 corners
-            quad[0].position = sf::Vector2f((float) (i * m_tileSize.x), (float) (j * m_tileSize.y));
-            quad[1].position = sf::Vector2f((float) ((i + 1) * m_tileSize.x), (float) (j * m_tileSize.y));
-            quad[2].position = sf::Vector2f((float) ((i + 1) * m_tileSize.x), (float) ((j + 1) * m_tileSize.y));
-            quad[3].position = sf::Vector2f((float) (i * m_tileSize.x), (float) ((j + 1) * m_tileSize.y));
-
-            // define its 4 texture coordinates
-            quad[0].texCoords = sf::Vector2f((float) (tu * m_tileSize.x), (float) (tv * m_tileSize.y));
-            quad[1].texCoords = sf::Vector2f((float) ((tu + 1) * m_tileSize.x), (float) (tv * m_tileSize.y));
-            quad[2].texCoords = sf::Vector2f((float) ((tu + 1) * m_tileSize.x), (float) ((tv + 1) * m_tileSize.y));
-            quad[3].texCoords = sf::Vector2f((float) (tu * m_tileSize.x), (float) ((tv + 1) * m_tileSize.y));
+            // update the layers with the correct tile
+            updateVertex(m_baseLayer, sf::Vector2u{i, j}, ts, tile.baseTileName);
+            updateVertex(m_topLayer, sf::Vector2u{i, j}, ts, tile.topTileName);
         }
     }
+}
+
+void TileMap::updateVertex(sf::VertexArray &va, sf::Vector2u pos, Tileset &ts, std::string &tileName) const {
+    // get a pointer to the current tile's quad
+    sf::Vertex *quad = &va[(pos.x + pos.y * m_width) * 4];
+
+    // we set a bogus position if we're not rendering this quad ... there's probably a better way to do this.
+    if (tileName == "none") {
+        quad[0].position = sf::Vector2f(0, 0);
+        quad[1].position = sf::Vector2f(0, 0);
+        quad[2].position = sf::Vector2f(0, 0);
+        quad[3].position = sf::Vector2f(0, 0);
+        return;
+    }
+
+    // define its 4 corners
+    quad[0].position = sf::Vector2f((float) (pos.x * ts.tileSize.x), (float) (pos.y * ts.tileSize.y));
+    quad[1].position = sf::Vector2f((float) ((pos.x + 1) * ts.tileSize.x), (float) (pos.y * ts.tileSize.y));
+    quad[2].position = sf::Vector2f((float) ((pos.x + 1) * ts.tileSize.x), (float) ((pos.y + 1) * ts.tileSize.y));
+    quad[3].position = sf::Vector2f((float) (pos.x * ts.tileSize.x), (float) ((pos.y + 1) * ts.tileSize.y));
+
+    sf::Vector2f &tOff = ts.tilePositions[tileName];
+
+    // define its 4 texture coordinates
+    quad[0].texCoords = sf::Vector2f(tOff.x, tOff.y);
+    quad[1].texCoords = sf::Vector2f(tOff.x + (float) ts.tileSize.x, tOff.y);
+    quad[2].texCoords = sf::Vector2f(tOff.x + (float) ts.tileSize.x, tOff.y + (float) ts.tileSize.y);
+    quad[3].texCoords = sf::Vector2f(tOff.x, tOff.y + (float) ts.tileSize.y);
 }
 
 void TileMap::draw(sf::RenderTarget &target, sf::RenderStates states) const {
@@ -39,41 +92,25 @@ void TileMap::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     states.transform *= getTransform();
 
     // apply the tileset texture
-    states.texture = &m_tileset;
+    states.texture = &TilesetManager::get().getTexture("world");
 
     // draw the vertex array
-    target.draw(m_vertices, states);
+    target.draw(m_baseLayer, states);
+
+    // draw the next layer
+    target.draw(m_topLayer, states);
 }
 
-bool TileMap::load(const std::string &tileset, sf::Vector2u tileSize) {
-    if (m_tileConfig.empty()) {
-        SPDLOG_CRITICAL("m_tileConfig is empty, cannot load tileset");
-        return false;
-    }
-
-    SPDLOG_INFO("loading tileset {}", tileset);
-
-    // make a texture of a decent size
-
-
-    // load the tileset texture
-    if (!m_tileset.loadFromFile(tileset)) {
-        SPDLOG_CRITICAL("loadFromFile failed, cannot load tileset");
-        return false;
-    }
+bool TileMap::load() {
+    TilesetManager::get().loadManifest("data/tileset_manifest.json");
 
     // resize the vertex array to fit the level size
-    m_vertices.setPrimitiveType(sf::Quads);
-    m_vertices.resize(m_width * m_height * 4);
+    m_baseLayer.setPrimitiveType(sf::Quads);
+    m_baseLayer.resize(m_width * m_height * 4);
 
-    // store the size of the tiles
-    m_tileSize = tileSize;
-
-    // update the out of bounds tile
-    m_outOfBoundsTile.textureIndex = m_tileConfig["WALL"];
-
-    // make sure that every Tile has a tileTextureIndex set for it.
-    refreshTileTextureIndexes();
+    // resize the vertex array to fit the level size
+    m_topLayer.setPrimitiveType(sf::Quads);
+    m_topLayer.resize(m_width * m_height * 4);
 
     // update the vertex array so the tileset will render.
     update();
@@ -83,15 +120,14 @@ bool TileMap::load(const std::string &tileset, sf::Vector2u tileSize) {
 }
 
 
-void TileMap::setTile(sf::Vector2i position, Tile tile) {
+void TileMap::setTile(sf::Vector2i position, Tile &tile) {
     if (position.x < 0 || position.y < 0 || position.x >= m_width || position.y >= m_height) {
         SPDLOG_WARN("out of bounds access position {},{}", position.x, position.y);
         return;
     }
 
     sf::Uint32 index = position.x + position.y * m_width;
-    Tile &t = m_tiles.at(index);
-    t = tile;
+    m_tiles[index] = std::move(tile);
 }
 
 void TileMap::setTileType(sf::Vector2i position, Tile::Type t) {
@@ -101,32 +137,7 @@ void TileMap::setTileType(sf::Vector2i position, Tile::Type t) {
     }
 
     sf::Uint32 index = position.x + position.y * m_width;
-    Tile &tile = m_tiles.at(index);
-    tile.type = t;
-    generateTextureIndexForTile(tile);
-}
-
-void TileMap::generateTextureIndexForTile(Tile &tile) {
-    if (m_tileConfig.empty()) {
-        SPDLOG_CRITICAL("m_tileConfig is empty");
-        return;
-    }
-
-    // set the rendered tile index
-    switch (tile.type) {
-        case Tile::Type::WALL:
-            tile.textureIndex = m_tileConfig["WALL"];
-            break;
-        default:
-            tile.textureIndex = m_tileConfig["FLOOR_VARIANT_0"];
-    }
-}
-
-// if you change the tileConfig then you'll need to refresh the texture indexes for all tiles
-void TileMap::refreshTileTextureIndexes() {
-    for (auto &tile: m_tiles) {
-        generateTextureIndexForTile(tile);
-    }
+    m_tiles.at(index).type = t;
 }
 
 Tile &TileMap::getTile(sf::Vector2i position) {

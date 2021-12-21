@@ -13,10 +13,17 @@
     "nlohmann-json",
     "opengl",
     "glew",
+    "fmt",
     {
       "name": "glad",
       "features": [
         "gl-api-32"
+      ]
+    },
+    {
+      "name": "libzippp",
+      "features": [
+        "encryption"
       ]
     }
   ]

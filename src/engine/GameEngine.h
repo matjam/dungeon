@@ -11,7 +11,7 @@ class GameEngine {
 private:
     bool m_running;
     bool m_fpsDisplayEnabled = false;
-    float m_renderTime;
+    sf::Int64 m_renderTime;
     sf::Mutex m_renderMutex;
     sf::RenderWindow m_window;
     std::shared_ptr<spdlog::logger> m_console;

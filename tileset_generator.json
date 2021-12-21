@@ -1,0 +1,62 @@
+{
+  "sheet_width": 512,
+  "sheet_height": 880,
+  "file": "data/tileset.png",
+  "remove_prefix": "td_",
+  "sheets": [
+    {
+      "name": "world",
+      "path": "data/td_sliced/td_world",
+      "remove_prefix": "world_",
+      "size": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "name": "monsters",
+      "path": "data/td_sliced/td_monsters",
+      "remove_prefix": "monsters_",
+      "size": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "name": "items",
+      "path": "data/td_sliced/td_items",
+      "remove_prefix": "items_",
+      "size": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "name": "fx",
+      "path": "data/td_sliced/td_fx",
+      "remove_prefix": "fx_",
+      "size": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "name": "interface",
+      "path": "data/td_sliced/td_interface",
+      "remove_prefix": "interface_",
+      "size": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "name": "portraits",
+      "path": "data/td_sliced/td_portraits",
+      "remove_prefix": "portrait_",
+      "size": {
+        "width": 32,
+        "height": 32
+      }
+    }
+  ]
+}

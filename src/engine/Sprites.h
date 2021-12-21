@@ -6,17 +6,18 @@
 
 #include "common.h"
 #include <map>
+#include "TilesetManager.h"
 
 class Sprites {
 private:
-    std::map<std::string, sf::Texture> m_textures{};
+    TilesetManager &m_tilesetManager = TilesetManager::get();
+
+
 public:
     Sprites() = default;
 
     Sprites(const Sprites &) = delete; // disable copying
     Sprites &operator=(Sprites const &) = delete; // disable assignment
-
-    void loadSheet(const std::string &name, const std::string &filename);
 };
 
 

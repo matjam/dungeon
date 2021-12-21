@@ -1,0 +1,5313 @@
+{
+  "file": "data/tileset.png",
+  "sets": {
+    "fx": {
+      "size": {
+        "height": 16,
+        "width": 16
+      },
+      "tiles": {
+        "acidball": {
+          "x": 0,
+          "y": 464
+        },
+        "acidball_e": {
+          "x": 16,
+          "y": 464
+        },
+        "acidball_n": {
+          "x": 32,
+          "y": 464
+        },
+        "acidball_ne": {
+          "x": 48,
+          "y": 464
+        },
+        "acidball_nw": {
+          "x": 64,
+          "y": 464
+        },
+        "acidball_s": {
+          "x": 80,
+          "y": 464
+        },
+        "acidball_se": {
+          "x": 96,
+          "y": 464
+        },
+        "acidball_sw": {
+          "x": 112,
+          "y": 464
+        },
+        "acidball_w": {
+          "x": 128,
+          "y": 464
+        },
+        "acidburn_1": {
+          "x": 144,
+          "y": 464
+        },
+        "acidburn_2": {
+          "x": 160,
+          "y": 464
+        },
+        "acidimpact_1": {
+          "x": 176,
+          "y": 464
+        },
+        "acidimpact_2": {
+          "x": 192,
+          "y": 464
+        },
+        "acidimpact_3": {
+          "x": 208,
+          "y": 464
+        },
+        "acidspark_1": {
+          "x": 224,
+          "y": 464
+        },
+        "acidspark_2": {
+          "x": 240,
+          "y": 464
+        },
+        "arrow_1": {
+          "x": 256,
+          "y": 464
+        },
+        "arrow_2": {
+          "x": 272,
+          "y": 464
+        },
+        "arrow_3": {
+          "x": 288,
+          "y": 464
+        },
+        "arrow_4": {
+          "x": 304,
+          "y": 464
+        },
+        "arrow_5": {
+          "x": 320,
+          "y": 464
+        },
+        "arrow_6": {
+          "x": 336,
+          "y": 464
+        },
+        "arrow_7": {
+          "x": 352,
+          "y": 464
+        },
+        "arrow_8": {
+          "x": 368,
+          "y": 464
+        },
+        "bash_1": {
+          "x": 384,
+          "y": 464
+        },
+        "bash_2": {
+          "x": 400,
+          "y": 464
+        },
+        "bash_3": {
+          "x": 416,
+          "y": 464
+        },
+        "bubble_1": {
+          "x": 432,
+          "y": 464
+        },
+        "bubble_2": {
+          "x": 448,
+          "y": 464
+        },
+        "bubble_3": {
+          "x": 464,
+          "y": 464
+        },
+        "cut_1": {
+          "x": 480,
+          "y": 464
+        },
+        "cut_2": {
+          "x": 496,
+          "y": 464
+        },
+        "cut_3": {
+          "x": 0,
+          "y": 480
+        },
+        "drip_1": {
+          "x": 16,
+          "y": 480
+        },
+        "drip_2": {
+          "x": 32,
+          "y": 480
+        },
+        "drip_3": {
+          "x": 48,
+          "y": 480
+        },
+        "fireball": {
+          "x": 64,
+          "y": 480
+        },
+        "fireball_e": {
+          "x": 80,
+          "y": 480
+        },
+        "fireball_n": {
+          "x": 96,
+          "y": 480
+        },
+        "fireball_ne": {
+          "x": 112,
+          "y": 480
+        },
+        "fireball_nw": {
+          "x": 128,
+          "y": 480
+        },
+        "fireball_s": {
+          "x": 144,
+          "y": 480
+        },
+        "fireball_se": {
+          "x": 160,
+          "y": 480
+        },
+        "fireball_sw": {
+          "x": 176,
+          "y": 480
+        },
+        "fireball_w": {
+          "x": 192,
+          "y": 480
+        },
+        "fireburn_1": {
+          "x": 208,
+          "y": 480
+        },
+        "fireburn_2": {
+          "x": 224,
+          "y": 480
+        },
+        "fireimpact_1": {
+          "x": 240,
+          "y": 480
+        },
+        "fireimpact_2": {
+          "x": 256,
+          "y": 480
+        },
+        "fireimpact_3": {
+          "x": 272,
+          "y": 480
+        },
+        "firespark_1": {
+          "x": 288,
+          "y": 480
+        },
+        "firespark_2": {
+          "x": 304,
+          "y": 480
+        },
+        "iceball": {
+          "x": 320,
+          "y": 480
+        },
+        "iceball_e": {
+          "x": 336,
+          "y": 480
+        },
+        "iceball_n": {
+          "x": 352,
+          "y": 480
+        },
+        "iceball_ne": {
+          "x": 368,
+          "y": 480
+        },
+        "iceball_nw": {
+          "x": 384,
+          "y": 480
+        },
+        "iceball_s": {
+          "x": 400,
+          "y": 480
+        },
+        "iceball_se": {
+          "x": 416,
+          "y": 480
+        },
+        "iceball_sw": {
+          "x": 432,
+          "y": 480
+        },
+        "iceball_w": {
+          "x": 448,
+          "y": 480
+        },
+        "iceburn_1": {
+          "x": 464,
+          "y": 480
+        },
+        "iceburn_2": {
+          "x": 480,
+          "y": 480
+        },
+        "iceimpact_1": {
+          "x": 496,
+          "y": 480
+        },
+        "iceimpact_2": {
+          "x": 0,
+          "y": 496
+        },
+        "iceimpact_3": {
+          "x": 16,
+          "y": 496
+        },
+        "icespark_1": {
+          "x": 32,
+          "y": 496
+        },
+        "icespark_2": {
+          "x": 48,
+          "y": 496
+        },
+        "lightning_1": {
+          "x": 64,
+          "y": 496
+        },
+        "lightning_2": {
+          "x": 80,
+          "y": 496
+        },
+        "pierce_1": {
+          "x": 96,
+          "y": 496
+        },
+        "pierce_2": {
+          "x": 112,
+          "y": 496
+        },
+        "pierce_3": {
+          "x": 128,
+          "y": 496
+        },
+        "poison_1": {
+          "x": 144,
+          "y": 496
+        },
+        "poison_2": {
+          "x": 160,
+          "y": 496
+        },
+        "rain_1": {
+          "x": 176,
+          "y": 496
+        },
+        "rain_2": {
+          "x": 192,
+          "y": 496
+        },
+        "slash2_1": {
+          "x": 208,
+          "y": 496
+        },
+        "slash2_2": {
+          "x": 224,
+          "y": 496
+        },
+        "slash2_3": {
+          "x": 240,
+          "y": 496
+        },
+        "slash_1": {
+          "x": 256,
+          "y": 496
+        },
+        "slash_2": {
+          "x": 272,
+          "y": 496
+        },
+        "slash_3": {
+          "x": 288,
+          "y": 496
+        },
+        "smoke_1": {
+          "x": 304,
+          "y": 496
+        },
+        "smoke_2": {
+          "x": 320,
+          "y": 496
+        },
+        "sparkle_1": {
+          "x": 336,
+          "y": 496
+        },
+        "sparkle_2": {
+          "x": 352,
+          "y": 496
+        },
+        "sparkle_3": {
+          "x": 368,
+          "y": 496
+        },
+        "swing_1": {
+          "x": 384,
+          "y": 496
+        },
+        "swing_2": {
+          "x": 400,
+          "y": 496
+        },
+        "swing_3": {
+          "x": 416,
+          "y": 496
+        },
+        "voidball": {
+          "x": 432,
+          "y": 496
+        },
+        "voidball_e": {
+          "x": 448,
+          "y": 496
+        },
+        "voidball_n": {
+          "x": 464,
+          "y": 496
+        },
+        "voidball_ne": {
+          "x": 480,
+          "y": 496
+        },
+        "voidball_nw": {
+          "x": 496,
+          "y": 496
+        },
+        "voidball_s": {
+          "x": 0,
+          "y": 512
+        },
+        "voidball_se": {
+          "x": 16,
+          "y": 512
+        },
+        "voidball_sw": {
+          "x": 32,
+          "y": 512
+        },
+        "voidball_w": {
+          "x": 48,
+          "y": 512
+        },
+        "voidburn_1": {
+          "x": 64,
+          "y": 512
+        },
+        "voidburn_2": {
+          "x": 80,
+          "y": 512
+        },
+        "voidimpact_1": {
+          "x": 96,
+          "y": 512
+        },
+        "voidimpact_2": {
+          "x": 112,
+          "y": 512
+        },
+        "voidimpact_3": {
+          "x": 128,
+          "y": 512
+        },
+        "voidspark_1": {
+          "x": 144,
+          "y": 512
+        },
+        "voidspark_2": {
+          "x": 160,
+          "y": 512
+        },
+        "zap_1": {
+          "x": 176,
+          "y": 512
+        },
+        "zap_2": {
+          "x": 192,
+          "y": 512
+        },
+        "zap_3": {
+          "x": 208,
+          "y": 512
+        },
+        "zap_4": {
+          "x": 224,
+          "y": 512
+        },
+        "zap_5": {
+          "x": 240,
+          "y": 512
+        },
+        "zap_6": {
+          "x": 256,
+          "y": 512
+        },
+        "zap_7": {
+          "x": 272,
+          "y": 512
+        },
+        "zap_8": {
+          "x": 288,
+          "y": 512
+        }
+      }
+    },
+    "interface": {
+      "size": {
+        "height": 16,
+        "width": 16
+      },
+      "tiles": {
+        "bar_h_scroll_1": {
+          "x": 0,
+          "y": 528
+        },
+        "bar_h_scroll_2": {
+          "x": 16,
+          "y": 528
+        },
+        "bar_h_scroll_3": {
+          "x": 32,
+          "y": 528
+        },
+        "bar_h_scroll_tab": {
+          "x": 48,
+          "y": 528
+        },
+        "bar_h_stone_1": {
+          "x": 64,
+          "y": 528
+        },
+        "bar_h_stone_2": {
+          "x": 80,
+          "y": 528
+        },
+        "bar_h_stone_3": {
+          "x": 96,
+          "y": 528
+        },
+        "bar_h_stone_tab": {
+          "x": 112,
+          "y": 528
+        },
+        "bar_v_scroll_1": {
+          "x": 128,
+          "y": 528
+        },
+        "bar_v_scroll_2": {
+          "x": 144,
+          "y": 528
+        },
+        "bar_v_scroll_3": {
+          "x": 160,
+          "y": 528
+        },
+        "bar_v_stone_1": {
+          "x": 176,
+          "y": 528
+        },
+        "bar_v_stone_2": {
+          "x": 192,
+          "y": 528
+        },
+        "bar_v_stone_3": {
+          "x": 208,
+          "y": 528
+        },
+        "bubble_1": {
+          "x": 224,
+          "y": 528
+        },
+        "bubble_2": {
+          "x": 240,
+          "y": 528
+        },
+        "bubble_3": {
+          "x": 256,
+          "y": 528
+        },
+        "bubble_4": {
+          "x": 272,
+          "y": 528
+        },
+        "bubble_5": {
+          "x": 288,
+          "y": 528
+        },
+        "bubble_6": {
+          "x": 304,
+          "y": 528
+        },
+        "bubble_7": {
+          "x": 320,
+          "y": 528
+        },
+        "bubble_8": {
+          "x": 336,
+          "y": 528
+        },
+        "bubble_9": {
+          "x": 352,
+          "y": 528
+        },
+        "bubble_arrow_l1": {
+          "x": 368,
+          "y": 528
+        },
+        "bubble_arrow_l2": {
+          "x": 384,
+          "y": 528
+        },
+        "bubble_arrow_m1": {
+          "x": 400,
+          "y": 528
+        },
+        "bubble_arrow_m2": {
+          "x": 416,
+          "y": 528
+        },
+        "bubble_arrow_r1": {
+          "x": 432,
+          "y": 528
+        },
+        "bubble_arrow_r2": {
+          "x": 448,
+          "y": 528
+        },
+        "button_scroll_1": {
+          "x": 464,
+          "y": 528
+        },
+        "button_scroll_2": {
+          "x": 480,
+          "y": 528
+        },
+        "button_scroll_press_1": {
+          "x": 496,
+          "y": 528
+        },
+        "button_scroll_press_2": {
+          "x": 0,
+          "y": 544
+        },
+        "button_stone_1": {
+          "x": 16,
+          "y": 544
+        },
+        "button_stone_2": {
+          "x": 32,
+          "y": 544
+        },
+        "button_stone_press_1": {
+          "x": 48,
+          "y": 544
+        },
+        "button_stone_press_2": {
+          "x": 64,
+          "y": 544
+        },
+        "check_scroll": {
+          "x": 80,
+          "y": 544
+        },
+        "check_scroll_checked": {
+          "x": 96,
+          "y": 544
+        },
+        "check_stone": {
+          "x": 112,
+          "y": 544
+        },
+        "check_stone_checked": {
+          "x": 128,
+          "y": 544
+        },
+        "close_scroll": {
+          "x": 144,
+          "y": 544
+        },
+        "close_scroll_press": {
+          "x": 160,
+          "y": 544
+        },
+        "close_stone": {
+          "x": 176,
+          "y": 544
+        },
+        "close_stone_press": {
+          "x": 192,
+          "y": 544
+        },
+        "crystal_empty": {
+          "x": 208,
+          "y": 544
+        },
+        "crystal_full": {
+          "x": 224,
+          "y": 544
+        },
+        "cursor_arrow_1": {
+          "x": 240,
+          "y": 544
+        },
+        "cursor_arrow_2": {
+          "x": 256,
+          "y": 544
+        },
+        "cursor_crosshair2_1": {
+          "x": 272,
+          "y": 544
+        },
+        "cursor_crosshair2_2": {
+          "x": 288,
+          "y": 544
+        },
+        "cursor_crosshair_1": {
+          "x": 304,
+          "y": 544
+        },
+        "cursor_crosshair_2": {
+          "x": 320,
+          "y": 544
+        },
+        "cursor_finger_1": {
+          "x": 336,
+          "y": 544
+        },
+        "cursor_finger_2": {
+          "x": 352,
+          "y": 544
+        },
+        "cursor_grab_1": {
+          "x": 368,
+          "y": 544
+        },
+        "cursor_grab_2": {
+          "x": 384,
+          "y": 544
+        },
+        "cursor_hand_1": {
+          "x": 400,
+          "y": 544
+        },
+        "cursor_hand_2": {
+          "x": 416,
+          "y": 544
+        },
+        "cursor_magnify_1": {
+          "x": 432,
+          "y": 544
+        },
+        "cursor_magnify_2": {
+          "x": 448,
+          "y": 544
+        },
+        "cursor_pointer_1": {
+          "x": 464,
+          "y": 544
+        },
+        "cursor_pointer_2": {
+          "x": 480,
+          "y": 544
+        },
+        "cursor_redo_1": {
+          "x": 496,
+          "y": 544
+        },
+        "cursor_redo_2": {
+          "x": 0,
+          "y": 560
+        },
+        "cursor_reduce_1": {
+          "x": 16,
+          "y": 560
+        },
+        "cursor_reduce_2": {
+          "x": 32,
+          "y": 560
+        },
+        "cursor_target_1": {
+          "x": 48,
+          "y": 560
+        },
+        "cursor_target_2": {
+          "x": 64,
+          "y": 560
+        },
+        "cursor_triangle_1": {
+          "x": 80,
+          "y": 560
+        },
+        "cursor_triangle_2": {
+          "x": 96,
+          "y": 560
+        },
+        "cursor_undo_1": {
+          "x": 112,
+          "y": 560
+        },
+        "cursor_undo_2": {
+          "x": 128,
+          "y": 560
+        },
+        "cursor_watch_1": {
+          "x": 144,
+          "y": 560
+        },
+        "cursor_watch_2": {
+          "x": 160,
+          "y": 560
+        },
+        "heart_empty": {
+          "x": 176,
+          "y": 560
+        },
+        "heart_full": {
+          "x": 192,
+          "y": 560
+        },
+        "hp_empty_1": {
+          "x": 208,
+          "y": 560
+        },
+        "hp_empty_2": {
+          "x": 224,
+          "y": 560
+        },
+        "hp_empty_3": {
+          "x": 240,
+          "y": 560
+        },
+        "hp_full_1": {
+          "x": 256,
+          "y": 560
+        },
+        "hp_full_2": {
+          "x": 272,
+          "y": 560
+        },
+        "hp_full_3": {
+          "x": 288,
+          "y": 560
+        },
+        "mp_empty_1": {
+          "x": 304,
+          "y": 560
+        },
+        "mp_empty_2": {
+          "x": 320,
+          "y": 560
+        },
+        "mp_empty_3": {
+          "x": 336,
+          "y": 560
+        },
+        "mp_full_1": {
+          "x": 352,
+          "y": 560
+        },
+        "mp_full_2": {
+          "x": 368,
+          "y": 560
+        },
+        "mp_full_3": {
+          "x": 384,
+          "y": 560
+        },
+        "option_alert": {
+          "x": 400,
+          "y": 560
+        },
+        "option_alert_press": {
+          "x": 416,
+          "y": 560
+        },
+        "option_attack": {
+          "x": 432,
+          "y": 560
+        },
+        "option_attack_press": {
+          "x": 448,
+          "y": 560
+        },
+        "option_bag": {
+          "x": 464,
+          "y": 560
+        },
+        "option_bag_press": {
+          "x": 480,
+          "y": 560
+        },
+        "option_blank": {
+          "x": 496,
+          "y": 560
+        },
+        "option_blank_press": {
+          "x": 0,
+          "y": 576
+        },
+        "option_cancel": {
+          "x": 16,
+          "y": 576
+        },
+        "option_cancel_press": {
+          "x": 32,
+          "y": 576
+        },
+        "option_defend": {
+          "x": 48,
+          "y": 576
+        },
+        "option_defend_press": {
+          "x": 64,
+          "y": 576
+        },
+        "option_equip": {
+          "x": 80,
+          "y": 576
+        },
+        "option_equip_press": {
+          "x": 96,
+          "y": 576
+        },
+        "option_go": {
+          "x": 112,
+          "y": 576
+        },
+        "option_go_press": {
+          "x": 128,
+          "y": 576
+        },
+        "option_item": {
+          "x": 144,
+          "y": 576
+        },
+        "option_item_press": {
+          "x": 160,
+          "y": 576
+        },
+        "option_magic": {
+          "x": 176,
+          "y": 576
+        },
+        "option_magic_press": {
+          "x": 192,
+          "y": 576
+        },
+        "option_setting": {
+          "x": 208,
+          "y": 576
+        },
+        "option_setting_press": {
+          "x": 224,
+          "y": 576
+        },
+        "panel_scroll_a_1": {
+          "x": 240,
+          "y": 576
+        },
+        "panel_scroll_a_2": {
+          "x": 256,
+          "y": 576
+        },
+        "panel_scroll_a_3": {
+          "x": 272,
+          "y": 576
+        },
+        "panel_scroll_a_4": {
+          "x": 288,
+          "y": 576
+        },
+        "panel_scroll_a_5": {
+          "x": 304,
+          "y": 576
+        },
+        "panel_scroll_a_6": {
+          "x": 320,
+          "y": 576
+        },
+        "panel_scroll_a_7": {
+          "x": 336,
+          "y": 576
+        },
+        "panel_scroll_a_8": {
+          "x": 352,
+          "y": 576
+        },
+        "panel_scroll_a_9": {
+          "x": 368,
+          "y": 576
+        },
+        "panel_scroll_b_1": {
+          "x": 384,
+          "y": 576
+        },
+        "panel_scroll_b_2": {
+          "x": 400,
+          "y": 576
+        },
+        "panel_scroll_b_3": {
+          "x": 416,
+          "y": 576
+        },
+        "panel_scroll_b_4": {
+          "x": 432,
+          "y": 576
+        },
+        "panel_scroll_b_5": {
+          "x": 448,
+          "y": 576
+        },
+        "panel_scroll_b_6": {
+          "x": 464,
+          "y": 576
+        },
+        "panel_scroll_b_7": {
+          "x": 480,
+          "y": 576
+        },
+        "panel_scroll_b_8": {
+          "x": 496,
+          "y": 576
+        },
+        "panel_scroll_b_9": {
+          "x": 0,
+          "y": 592
+        },
+        "panel_stone_a_1": {
+          "x": 16,
+          "y": 592
+        },
+        "panel_stone_a_2": {
+          "x": 32,
+          "y": 592
+        },
+        "panel_stone_a_3": {
+          "x": 48,
+          "y": 592
+        },
+        "panel_stone_a_4": {
+          "x": 64,
+          "y": 592
+        },
+        "panel_stone_a_5": {
+          "x": 80,
+          "y": 592
+        },
+        "panel_stone_a_6": {
+          "x": 96,
+          "y": 592
+        },
+        "panel_stone_a_7": {
+          "x": 112,
+          "y": 592
+        },
+        "panel_stone_a_8": {
+          "x": 128,
+          "y": 592
+        },
+        "panel_stone_a_9": {
+          "x": 144,
+          "y": 592
+        },
+        "panel_stone_b_1": {
+          "x": 160,
+          "y": 592
+        },
+        "panel_stone_b_2": {
+          "x": 176,
+          "y": 592
+        },
+        "panel_stone_b_3": {
+          "x": 192,
+          "y": 592
+        },
+        "panel_stone_b_4": {
+          "x": 208,
+          "y": 592
+        },
+        "panel_stone_b_5": {
+          "x": 224,
+          "y": 592
+        },
+        "panel_stone_b_6": {
+          "x": 240,
+          "y": 592
+        },
+        "panel_stone_b_7": {
+          "x": 256,
+          "y": 592
+        },
+        "panel_stone_b_8": {
+          "x": 272,
+          "y": 592
+        },
+        "panel_stone_b_9": {
+          "x": 288,
+          "y": 592
+        },
+        "panel_window_1": {
+          "x": 304,
+          "y": 592
+        },
+        "panel_window_2": {
+          "x": 320,
+          "y": 592
+        },
+        "panel_window_3": {
+          "x": 336,
+          "y": 592
+        },
+        "panel_window_4": {
+          "x": 352,
+          "y": 592
+        },
+        "panel_window_5": {
+          "x": 368,
+          "y": 592
+        },
+        "panel_window_6": {
+          "x": 384,
+          "y": 592
+        },
+        "panel_window_7": {
+          "x": 400,
+          "y": 592
+        },
+        "panel_window_8": {
+          "x": 416,
+          "y": 592
+        },
+        "panel_window_9": {
+          "x": 432,
+          "y": 592
+        },
+        "select_a1": {
+          "x": 448,
+          "y": 592
+        },
+        "select_a2": {
+          "x": 464,
+          "y": 592
+        },
+        "select_b1": {
+          "x": 480,
+          "y": 592
+        },
+        "select_b2": {
+          "x": 496,
+          "y": 592
+        },
+        "select_c1": {
+          "x": 0,
+          "y": 608
+        },
+        "select_c2": {
+          "x": 16,
+          "y": 608
+        },
+        "select_d1": {
+          "x": 32,
+          "y": 608
+        },
+        "select_d2": {
+          "x": 48,
+          "y": 608
+        },
+        "select_e1": {
+          "x": 64,
+          "y": 608
+        },
+        "select_e2": {
+          "x": 80,
+          "y": 608
+        },
+        "select_f1": {
+          "x": 96,
+          "y": 608
+        },
+        "select_f2": {
+          "x": 112,
+          "y": 608
+        }
+      }
+    },
+    "items": {
+      "size": {
+        "height": 16,
+        "width": 16
+      },
+      "tiles": {
+        "amulet_gold": {
+          "x": 0,
+          "y": 416
+        },
+        "amulet_magic": {
+          "x": 16,
+          "y": 416
+        },
+        "amulet_silver": {
+          "x": 32,
+          "y": 416
+        },
+        "arrow": {
+          "x": 48,
+          "y": 416
+        },
+        "bandage": {
+          "x": 64,
+          "y": 416
+        },
+        "bolt": {
+          "x": 80,
+          "y": 416
+        },
+        "book_black": {
+          "x": 96,
+          "y": 416
+        },
+        "book_brown": {
+          "x": 112,
+          "y": 416
+        },
+        "book_green": {
+          "x": 128,
+          "y": 416
+        },
+        "caltrops": {
+          "x": 144,
+          "y": 416
+        },
+        "cape_leather": {
+          "x": 160,
+          "y": 416
+        },
+        "cape_magic": {
+          "x": 176,
+          "y": 416
+        },
+        "cape_purple": {
+          "x": 192,
+          "y": 416
+        },
+        "coins_copper": {
+          "x": 208,
+          "y": 416
+        },
+        "coins_gold": {
+          "x": 224,
+          "y": 416
+        },
+        "coins_silver": {
+          "x": 240,
+          "y": 416
+        },
+        "compass": {
+          "x": 256,
+          "y": 416
+        },
+        "cross": {
+          "x": 272,
+          "y": 416
+        },
+        "crown_evil": {
+          "x": 288,
+          "y": 416
+        },
+        "crown_gold": {
+          "x": 304,
+          "y": 416
+        },
+        "crown_silver": {
+          "x": 320,
+          "y": 416
+        },
+        "crystal_empty": {
+          "x": 336,
+          "y": 416
+        },
+        "crystal_full": {
+          "x": 352,
+          "y": 416
+        },
+        "darts": {
+          "x": 368,
+          "y": 416
+        },
+        "feather": {
+          "x": 384,
+          "y": 416
+        },
+        "flask_blue": {
+          "x": 400,
+          "y": 416
+        },
+        "flask_green": {
+          "x": 416,
+          "y": 416
+        },
+        "flask_red": {
+          "x": 432,
+          "y": 416
+        },
+        "gem_amethyst": {
+          "x": 448,
+          "y": 416
+        },
+        "gem_garnet": {
+          "x": 464,
+          "y": 416
+        },
+        "gem_jade": {
+          "x": 480,
+          "y": 416
+        },
+        "gem_ruby": {
+          "x": 496,
+          "y": 416
+        },
+        "gem_sapphire": {
+          "x": 0,
+          "y": 432
+        },
+        "hat_leather": {
+          "x": 16,
+          "y": 432
+        },
+        "hat_magic": {
+          "x": 32,
+          "y": 432
+        },
+        "hat_purple": {
+          "x": 48,
+          "y": 432
+        },
+        "heart_empty": {
+          "x": 64,
+          "y": 432
+        },
+        "heart_full": {
+          "x": 80,
+          "y": 432
+        },
+        "herb_gold": {
+          "x": 96,
+          "y": 432
+        },
+        "herb_green": {
+          "x": 112,
+          "y": 432
+        },
+        "herb_red": {
+          "x": 128,
+          "y": 432
+        },
+        "key_gold": {
+          "x": 144,
+          "y": 432
+        },
+        "key_magic": {
+          "x": 160,
+          "y": 432
+        },
+        "key_skeleton": {
+          "x": 176,
+          "y": 432
+        },
+        "leather_boot": {
+          "x": 192,
+          "y": 432
+        },
+        "leather_chest": {
+          "x": 208,
+          "y": 432
+        },
+        "leather_glove": {
+          "x": 224,
+          "y": 432
+        },
+        "leather_helm": {
+          "x": 240,
+          "y": 432
+        },
+        "leather_pant": {
+          "x": 256,
+          "y": 432
+        },
+        "magic_boot": {
+          "x": 272,
+          "y": 432
+        },
+        "magic_chest": {
+          "x": 288,
+          "y": 432
+        },
+        "magic_glove": {
+          "x": 304,
+          "y": 432
+        },
+        "magic_helm": {
+          "x": 320,
+          "y": 432
+        },
+        "magic_pant": {
+          "x": 336,
+          "y": 432
+        },
+        "map": {
+          "x": 352,
+          "y": 432
+        },
+        "potion_black": {
+          "x": 368,
+          "y": 432
+        },
+        "potion_blue": {
+          "x": 384,
+          "y": 432
+        },
+        "potion_green": {
+          "x": 400,
+          "y": 432
+        },
+        "potion_red": {
+          "x": 416,
+          "y": 432
+        },
+        "potion_yellow": {
+          "x": 432,
+          "y": 432
+        },
+        "quiver": {
+          "x": 448,
+          "y": 432
+        },
+        "ring_gold": {
+          "x": 464,
+          "y": 432
+        },
+        "ring_magic": {
+          "x": 480,
+          "y": 432
+        },
+        "ring_silver": {
+          "x": 496,
+          "y": 432
+        },
+        "rope": {
+          "x": 0,
+          "y": 448
+        },
+        "sack": {
+          "x": 16,
+          "y": 448
+        },
+        "scroll": {
+          "x": 32,
+          "y": 448
+        },
+        "shield_magic": {
+          "x": 48,
+          "y": 448
+        },
+        "shield_steel": {
+          "x": 64,
+          "y": 448
+        },
+        "shield_wood": {
+          "x": 80,
+          "y": 448
+        },
+        "skull": {
+          "x": 96,
+          "y": 448
+        },
+        "skull_gold": {
+          "x": 112,
+          "y": 448
+        },
+        "steel_boot": {
+          "x": 128,
+          "y": 448
+        },
+        "steel_chest": {
+          "x": 144,
+          "y": 448
+        },
+        "steel_glove": {
+          "x": 160,
+          "y": 448
+        },
+        "steel_helm": {
+          "x": 176,
+          "y": 448
+        },
+        "steel_pant": {
+          "x": 192,
+          "y": 448
+        },
+        "stone": {
+          "x": 208,
+          "y": 448
+        },
+        "token_copper": {
+          "x": 224,
+          "y": 448
+        },
+        "token_gold": {
+          "x": 240,
+          "y": 448
+        },
+        "token_silver": {
+          "x": 256,
+          "y": 448
+        },
+        "torch1": {
+          "x": 272,
+          "y": 448
+        },
+        "torch2": {
+          "x": 288,
+          "y": 448
+        },
+        "turkey": {
+          "x": 304,
+          "y": 448
+        },
+        "weapon_axe": {
+          "x": 320,
+          "y": 448
+        },
+        "weapon_bow": {
+          "x": 336,
+          "y": 448
+        },
+        "weapon_club": {
+          "x": 352,
+          "y": 448
+        },
+        "weapon_crossbow": {
+          "x": 368,
+          "y": 448
+        },
+        "weapon_dagger": {
+          "x": 384,
+          "y": 448
+        },
+        "weapon_hammer": {
+          "x": 400,
+          "y": 448
+        },
+        "weapon_mace": {
+          "x": 416,
+          "y": 448
+        },
+        "weapon_quarterstaff": {
+          "x": 432,
+          "y": 448
+        },
+        "weapon_shortsword": {
+          "x": 448,
+          "y": 448
+        },
+        "weapon_sling": {
+          "x": 464,
+          "y": 448
+        },
+        "weapon_staff": {
+          "x": 480,
+          "y": 448
+        },
+        "weapon_sword": {
+          "x": 496,
+          "y": 448
+        }
+      }
+    },
+    "monsters": {
+      "size": {
+        "height": 16,
+        "width": 16
+      },
+      "tiles": {
+        "angel_d1": {
+          "x": 0,
+          "y": 160
+        },
+        "angel_d2": {
+          "x": 16,
+          "y": 160
+        },
+        "angel_l1": {
+          "x": 32,
+          "y": 160
+        },
+        "angel_l2": {
+          "x": 48,
+          "y": 160
+        },
+        "angel_r1": {
+          "x": 64,
+          "y": 160
+        },
+        "angel_r2": {
+          "x": 80,
+          "y": 160
+        },
+        "angel_u1": {
+          "x": 96,
+          "y": 160
+        },
+        "angel_u2": {
+          "x": 112,
+          "y": 160
+        },
+        "archer_d1": {
+          "x": 128,
+          "y": 160
+        },
+        "archer_d2": {
+          "x": 144,
+          "y": 160
+        },
+        "archer_l1": {
+          "x": 160,
+          "y": 160
+        },
+        "archer_l2": {
+          "x": 176,
+          "y": 160
+        },
+        "archer_r1": {
+          "x": 192,
+          "y": 160
+        },
+        "archer_r2": {
+          "x": 208,
+          "y": 160
+        },
+        "archer_u1": {
+          "x": 224,
+          "y": 160
+        },
+        "archer_u2": {
+          "x": 240,
+          "y": 160
+        },
+        "bat_d1": {
+          "x": 256,
+          "y": 160
+        },
+        "bat_d2": {
+          "x": 272,
+          "y": 160
+        },
+        "bat_l1": {
+          "x": 288,
+          "y": 160
+        },
+        "bat_l2": {
+          "x": 304,
+          "y": 160
+        },
+        "bat_r1": {
+          "x": 320,
+          "y": 160
+        },
+        "bat_r2": {
+          "x": 336,
+          "y": 160
+        },
+        "bat_u1": {
+          "x": 352,
+          "y": 160
+        },
+        "bat_u2": {
+          "x": 368,
+          "y": 160
+        },
+        "beetle_d1": {
+          "x": 384,
+          "y": 160
+        },
+        "beetle_d2": {
+          "x": 400,
+          "y": 160
+        },
+        "beetle_l1": {
+          "x": 416,
+          "y": 160
+        },
+        "beetle_l2": {
+          "x": 432,
+          "y": 160
+        },
+        "beetle_r1": {
+          "x": 448,
+          "y": 160
+        },
+        "beetle_r2": {
+          "x": 464,
+          "y": 160
+        },
+        "beetle_u1": {
+          "x": 480,
+          "y": 160
+        },
+        "beetle_u2": {
+          "x": 496,
+          "y": 160
+        },
+        "beholder_d1": {
+          "x": 0,
+          "y": 176
+        },
+        "beholder_d2": {
+          "x": 16,
+          "y": 176
+        },
+        "beholder_l1": {
+          "x": 32,
+          "y": 176
+        },
+        "beholder_l2": {
+          "x": 48,
+          "y": 176
+        },
+        "beholder_r1": {
+          "x": 64,
+          "y": 176
+        },
+        "beholder_r2": {
+          "x": 80,
+          "y": 176
+        },
+        "beholder_u1": {
+          "x": 96,
+          "y": 176
+        },
+        "beholder_u2": {
+          "x": 112,
+          "y": 176
+        },
+        "berserker_d1": {
+          "x": 128,
+          "y": 176
+        },
+        "berserker_d2": {
+          "x": 144,
+          "y": 176
+        },
+        "berserker_l1": {
+          "x": 160,
+          "y": 176
+        },
+        "berserker_l2": {
+          "x": 176,
+          "y": 176
+        },
+        "berserker_r1": {
+          "x": 192,
+          "y": 176
+        },
+        "berserker_r2": {
+          "x": 208,
+          "y": 176
+        },
+        "berserker_u1": {
+          "x": 224,
+          "y": 176
+        },
+        "berserker_u2": {
+          "x": 240,
+          "y": 176
+        },
+        "cat_d1": {
+          "x": 256,
+          "y": 176
+        },
+        "cat_d2": {
+          "x": 272,
+          "y": 176
+        },
+        "cat_l1": {
+          "x": 288,
+          "y": 176
+        },
+        "cat_l2": {
+          "x": 304,
+          "y": 176
+        },
+        "cat_r1": {
+          "x": 320,
+          "y": 176
+        },
+        "cat_r2": {
+          "x": 336,
+          "y": 176
+        },
+        "cat_u1": {
+          "x": 352,
+          "y": 176
+        },
+        "cat_u2": {
+          "x": 368,
+          "y": 176
+        },
+        "centaur_d1": {
+          "x": 384,
+          "y": 176
+        },
+        "centaur_d2": {
+          "x": 400,
+          "y": 176
+        },
+        "centaur_l1": {
+          "x": 416,
+          "y": 176
+        },
+        "centaur_l2": {
+          "x": 432,
+          "y": 176
+        },
+        "centaur_r1": {
+          "x": 448,
+          "y": 176
+        },
+        "centaur_r2": {
+          "x": 464,
+          "y": 176
+        },
+        "centaur_u1": {
+          "x": 480,
+          "y": 176
+        },
+        "centaur_u2": {
+          "x": 496,
+          "y": 176
+        },
+        "cleric_d1": {
+          "x": 0,
+          "y": 192
+        },
+        "cleric_d2": {
+          "x": 16,
+          "y": 192
+        },
+        "cleric_l1": {
+          "x": 32,
+          "y": 192
+        },
+        "cleric_l2": {
+          "x": 48,
+          "y": 192
+        },
+        "cleric_r1": {
+          "x": 64,
+          "y": 192
+        },
+        "cleric_r2": {
+          "x": 80,
+          "y": 192
+        },
+        "cleric_u1": {
+          "x": 96,
+          "y": 192
+        },
+        "cleric_u2": {
+          "x": 112,
+          "y": 192
+        },
+        "demon_d1": {
+          "x": 128,
+          "y": 192
+        },
+        "demon_d2": {
+          "x": 144,
+          "y": 192
+        },
+        "demon_l1": {
+          "x": 160,
+          "y": 192
+        },
+        "demon_l2": {
+          "x": 176,
+          "y": 192
+        },
+        "demon_r1": {
+          "x": 192,
+          "y": 192
+        },
+        "demon_r2": {
+          "x": 208,
+          "y": 192
+        },
+        "demon_u1": {
+          "x": 224,
+          "y": 192
+        },
+        "demon_u2": {
+          "x": 240,
+          "y": 192
+        },
+        "dragon_d1": {
+          "x": 256,
+          "y": 192
+        },
+        "dragon_d2": {
+          "x": 272,
+          "y": 192
+        },
+        "dragon_l1": {
+          "x": 288,
+          "y": 192
+        },
+        "dragon_l2": {
+          "x": 304,
+          "y": 192
+        },
+        "dragon_r1": {
+          "x": 320,
+          "y": 192
+        },
+        "dragon_r2": {
+          "x": 336,
+          "y": 192
+        },
+        "dragon_u1": {
+          "x": 352,
+          "y": 192
+        },
+        "dragon_u2": {
+          "x": 368,
+          "y": 192
+        },
+        "druid_d1": {
+          "x": 384,
+          "y": 192
+        },
+        "druid_d2": {
+          "x": 400,
+          "y": 192
+        },
+        "druid_l1": {
+          "x": 416,
+          "y": 192
+        },
+        "druid_l2": {
+          "x": 432,
+          "y": 192
+        },
+        "druid_r1": {
+          "x": 448,
+          "y": 192
+        },
+        "druid_r2": {
+          "x": 464,
+          "y": 192
+        },
+        "druid_u1": {
+          "x": 480,
+          "y": 192
+        },
+        "druid_u2": {
+          "x": 496,
+          "y": 192
+        },
+        "dwarf_d1": {
+          "x": 0,
+          "y": 208
+        },
+        "dwarf_d2": {
+          "x": 16,
+          "y": 208
+        },
+        "dwarf_l1": {
+          "x": 32,
+          "y": 208
+        },
+        "dwarf_l2": {
+          "x": 48,
+          "y": 208
+        },
+        "dwarf_r1": {
+          "x": 64,
+          "y": 208
+        },
+        "dwarf_r2": {
+          "x": 80,
+          "y": 208
+        },
+        "dwarf_u1": {
+          "x": 96,
+          "y": 208
+        },
+        "dwarf_u2": {
+          "x": 112,
+          "y": 208
+        },
+        "elemental_d1": {
+          "x": 128,
+          "y": 208
+        },
+        "elemental_d2": {
+          "x": 144,
+          "y": 208
+        },
+        "elemental_l1": {
+          "x": 160,
+          "y": 208
+        },
+        "elemental_l2": {
+          "x": 176,
+          "y": 208
+        },
+        "elemental_r1": {
+          "x": 192,
+          "y": 208
+        },
+        "elemental_r2": {
+          "x": 208,
+          "y": 208
+        },
+        "elemental_u1": {
+          "x": 224,
+          "y": 208
+        },
+        "elemental_u2": {
+          "x": 240,
+          "y": 208
+        },
+        "fighter_d1": {
+          "x": 256,
+          "y": 208
+        },
+        "fighter_d2": {
+          "x": 272,
+          "y": 208
+        },
+        "fighter_l1": {
+          "x": 288,
+          "y": 208
+        },
+        "fighter_l2": {
+          "x": 304,
+          "y": 208
+        },
+        "fighter_r1": {
+          "x": 320,
+          "y": 208
+        },
+        "fighter_r2": {
+          "x": 336,
+          "y": 208
+        },
+        "fighter_u1": {
+          "x": 352,
+          "y": 208
+        },
+        "fighter_u2": {
+          "x": 368,
+          "y": 208
+        },
+        "flame_d1": {
+          "x": 384,
+          "y": 208
+        },
+        "flame_d2": {
+          "x": 400,
+          "y": 208
+        },
+        "flame_l1": {
+          "x": 416,
+          "y": 208
+        },
+        "flame_l2": {
+          "x": 432,
+          "y": 208
+        },
+        "flame_r1": {
+          "x": 448,
+          "y": 208
+        },
+        "flame_r2": {
+          "x": 464,
+          "y": 208
+        },
+        "flame_u1": {
+          "x": 480,
+          "y": 208
+        },
+        "flame_u2": {
+          "x": 496,
+          "y": 208
+        },
+        "flies_d1": {
+          "x": 0,
+          "y": 224
+        },
+        "flies_d2": {
+          "x": 16,
+          "y": 224
+        },
+        "flies_l1": {
+          "x": 32,
+          "y": 224
+        },
+        "flies_l2": {
+          "x": 48,
+          "y": 224
+        },
+        "flies_r1": {
+          "x": 64,
+          "y": 224
+        },
+        "flies_r2": {
+          "x": 80,
+          "y": 224
+        },
+        "flies_u1": {
+          "x": 96,
+          "y": 224
+        },
+        "flies_u2": {
+          "x": 112,
+          "y": 224
+        },
+        "giant_d1": {
+          "x": 128,
+          "y": 224
+        },
+        "giant_d2": {
+          "x": 144,
+          "y": 224
+        },
+        "giant_l1": {
+          "x": 160,
+          "y": 224
+        },
+        "giant_l2": {
+          "x": 176,
+          "y": 224
+        },
+        "giant_r1": {
+          "x": 192,
+          "y": 224
+        },
+        "giant_r2": {
+          "x": 208,
+          "y": 224
+        },
+        "giant_u1": {
+          "x": 224,
+          "y": 224
+        },
+        "giant_u2": {
+          "x": 240,
+          "y": 224
+        },
+        "goblin_captain_d1": {
+          "x": 256,
+          "y": 224
+        },
+        "goblin_captain_d2": {
+          "x": 272,
+          "y": 224
+        },
+        "goblin_captain_l1": {
+          "x": 288,
+          "y": 224
+        },
+        "goblin_captain_l2": {
+          "x": 304,
+          "y": 224
+        },
+        "goblin_captain_r1": {
+          "x": 320,
+          "y": 224
+        },
+        "goblin_captain_r2": {
+          "x": 336,
+          "y": 224
+        },
+        "goblin_captain_u1": {
+          "x": 352,
+          "y": 224
+        },
+        "goblin_captain_u2": {
+          "x": 368,
+          "y": 224
+        },
+        "goblin_grunt_d1": {
+          "x": 384,
+          "y": 224
+        },
+        "goblin_grunt_d2": {
+          "x": 400,
+          "y": 224
+        },
+        "goblin_grunt_l1": {
+          "x": 416,
+          "y": 224
+        },
+        "goblin_grunt_l2": {
+          "x": 432,
+          "y": 224
+        },
+        "goblin_grunt_r1": {
+          "x": 448,
+          "y": 224
+        },
+        "goblin_grunt_r2": {
+          "x": 464,
+          "y": 224
+        },
+        "goblin_grunt_u1": {
+          "x": 480,
+          "y": 224
+        },
+        "goblin_grunt_u2": {
+          "x": 496,
+          "y": 224
+        },
+        "goblin_mage_d1": {
+          "x": 0,
+          "y": 240
+        },
+        "goblin_mage_d2": {
+          "x": 16,
+          "y": 240
+        },
+        "goblin_mage_l1": {
+          "x": 32,
+          "y": 240
+        },
+        "goblin_mage_l2": {
+          "x": 48,
+          "y": 240
+        },
+        "goblin_mage_r1": {
+          "x": 64,
+          "y": 240
+        },
+        "goblin_mage_r2": {
+          "x": 80,
+          "y": 240
+        },
+        "goblin_mage_u1": {
+          "x": 96,
+          "y": 240
+        },
+        "goblin_mage_u2": {
+          "x": 112,
+          "y": 240
+        },
+        "griffin_d1": {
+          "x": 128,
+          "y": 240
+        },
+        "griffin_d2": {
+          "x": 144,
+          "y": 240
+        },
+        "griffin_l1": {
+          "x": 160,
+          "y": 240
+        },
+        "griffin_l2": {
+          "x": 176,
+          "y": 240
+        },
+        "griffin_r1": {
+          "x": 192,
+          "y": 240
+        },
+        "griffin_r2": {
+          "x": 208,
+          "y": 240
+        },
+        "griffin_u1": {
+          "x": 224,
+          "y": 240
+        },
+        "griffin_u2": {
+          "x": 240,
+          "y": 240
+        },
+        "hobbit_d1": {
+          "x": 256,
+          "y": 240
+        },
+        "hobbit_d2": {
+          "x": 272,
+          "y": 240
+        },
+        "hobbit_l1": {
+          "x": 288,
+          "y": 240
+        },
+        "hobbit_l2": {
+          "x": 304,
+          "y": 240
+        },
+        "hobbit_r1": {
+          "x": 320,
+          "y": 240
+        },
+        "hobbit_r2": {
+          "x": 336,
+          "y": 240
+        },
+        "hobbit_u1": {
+          "x": 352,
+          "y": 240
+        },
+        "hobbit_u2": {
+          "x": 368,
+          "y": 240
+        },
+        "horse_d1": {
+          "x": 384,
+          "y": 240
+        },
+        "horse_d2": {
+          "x": 400,
+          "y": 240
+        },
+        "horse_l1": {
+          "x": 416,
+          "y": 240
+        },
+        "horse_l2": {
+          "x": 432,
+          "y": 240
+        },
+        "horse_r1": {
+          "x": 448,
+          "y": 240
+        },
+        "horse_r2": {
+          "x": 464,
+          "y": 240
+        },
+        "horse_u1": {
+          "x": 480,
+          "y": 240
+        },
+        "horse_u2": {
+          "x": 496,
+          "y": 240
+        },
+        "jelly_d1": {
+          "x": 0,
+          "y": 256
+        },
+        "jelly_d2": {
+          "x": 16,
+          "y": 256
+        },
+        "jelly_l1": {
+          "x": 32,
+          "y": 256
+        },
+        "jelly_l2": {
+          "x": 48,
+          "y": 256
+        },
+        "jelly_r1": {
+          "x": 64,
+          "y": 256
+        },
+        "jelly_r2": {
+          "x": 80,
+          "y": 256
+        },
+        "jelly_u1": {
+          "x": 96,
+          "y": 256
+        },
+        "jelly_u2": {
+          "x": 112,
+          "y": 256
+        },
+        "king_d1": {
+          "x": 128,
+          "y": 256
+        },
+        "king_d2": {
+          "x": 144,
+          "y": 256
+        },
+        "king_l1": {
+          "x": 160,
+          "y": 256
+        },
+        "king_l2": {
+          "x": 176,
+          "y": 256
+        },
+        "king_r1": {
+          "x": 192,
+          "y": 256
+        },
+        "king_r2": {
+          "x": 208,
+          "y": 256
+        },
+        "king_u1": {
+          "x": 224,
+          "y": 256
+        },
+        "king_u2": {
+          "x": 240,
+          "y": 256
+        },
+        "knight_d1": {
+          "x": 256,
+          "y": 256
+        },
+        "knight_d2": {
+          "x": 272,
+          "y": 256
+        },
+        "knight_l1": {
+          "x": 288,
+          "y": 256
+        },
+        "knight_l2": {
+          "x": 304,
+          "y": 256
+        },
+        "knight_r1": {
+          "x": 320,
+          "y": 256
+        },
+        "knight_r2": {
+          "x": 336,
+          "y": 256
+        },
+        "knight_u1": {
+          "x": 352,
+          "y": 256
+        },
+        "knight_u2": {
+          "x": 368,
+          "y": 256
+        },
+        "mercenary_d1": {
+          "x": 384,
+          "y": 256
+        },
+        "mercenary_d2": {
+          "x": 400,
+          "y": 256
+        },
+        "mercenary_l1": {
+          "x": 416,
+          "y": 256
+        },
+        "mercenary_l2": {
+          "x": 432,
+          "y": 256
+        },
+        "mercenary_r1": {
+          "x": 448,
+          "y": 256
+        },
+        "mercenary_r2": {
+          "x": 464,
+          "y": 256
+        },
+        "mercenary_u1": {
+          "x": 480,
+          "y": 256
+        },
+        "mercenary_u2": {
+          "x": 496,
+          "y": 256
+        },
+        "merchant_d1": {
+          "x": 0,
+          "y": 272
+        },
+        "merchant_d2": {
+          "x": 16,
+          "y": 272
+        },
+        "merchant_l1": {
+          "x": 32,
+          "y": 272
+        },
+        "merchant_l2": {
+          "x": 48,
+          "y": 272
+        },
+        "merchant_r1": {
+          "x": 64,
+          "y": 272
+        },
+        "merchant_r2": {
+          "x": 80,
+          "y": 272
+        },
+        "merchant_u1": {
+          "x": 96,
+          "y": 272
+        },
+        "merchant_u2": {
+          "x": 112,
+          "y": 272
+        },
+        "mimic_d1": {
+          "x": 128,
+          "y": 272
+        },
+        "mimic_d2": {
+          "x": 144,
+          "y": 272
+        },
+        "mimic_l1": {
+          "x": 160,
+          "y": 272
+        },
+        "mimic_l2": {
+          "x": 176,
+          "y": 272
+        },
+        "mimic_r1": {
+          "x": 192,
+          "y": 272
+        },
+        "mimic_r2": {
+          "x": 208,
+          "y": 272
+        },
+        "mimic_u1": {
+          "x": 224,
+          "y": 272
+        },
+        "mimic_u2": {
+          "x": 240,
+          "y": 272
+        },
+        "minotaur_d1": {
+          "x": 256,
+          "y": 272
+        },
+        "minotaur_d2": {
+          "x": 272,
+          "y": 272
+        },
+        "minotaur_l1": {
+          "x": 288,
+          "y": 272
+        },
+        "minotaur_l2": {
+          "x": 304,
+          "y": 272
+        },
+        "minotaur_r1": {
+          "x": 320,
+          "y": 272
+        },
+        "minotaur_r2": {
+          "x": 336,
+          "y": 272
+        },
+        "minotaur_u1": {
+          "x": 352,
+          "y": 272
+        },
+        "minotaur_u2": {
+          "x": 368,
+          "y": 272
+        },
+        "minstrel_d1": {
+          "x": 384,
+          "y": 272
+        },
+        "minstrel_d2": {
+          "x": 400,
+          "y": 272
+        },
+        "minstrel_l1": {
+          "x": 416,
+          "y": 272
+        },
+        "minstrel_l2": {
+          "x": 432,
+          "y": 272
+        },
+        "minstrel_r1": {
+          "x": 448,
+          "y": 272
+        },
+        "minstrel_r2": {
+          "x": 464,
+          "y": 272
+        },
+        "minstrel_u1": {
+          "x": 480,
+          "y": 272
+        },
+        "minstrel_u2": {
+          "x": 496,
+          "y": 272
+        },
+        "moth_d1": {
+          "x": 0,
+          "y": 288
+        },
+        "moth_d2": {
+          "x": 16,
+          "y": 288
+        },
+        "moth_l1": {
+          "x": 32,
+          "y": 288
+        },
+        "moth_l2": {
+          "x": 48,
+          "y": 288
+        },
+        "moth_r1": {
+          "x": 64,
+          "y": 288
+        },
+        "moth_r2": {
+          "x": 80,
+          "y": 288
+        },
+        "moth_u1": {
+          "x": 96,
+          "y": 288
+        },
+        "moth_u2": {
+          "x": 112,
+          "y": 288
+        },
+        "mummy_d1": {
+          "x": 128,
+          "y": 288
+        },
+        "mummy_d2": {
+          "x": 144,
+          "y": 288
+        },
+        "mummy_l1": {
+          "x": 160,
+          "y": 288
+        },
+        "mummy_l2": {
+          "x": 176,
+          "y": 288
+        },
+        "mummy_r1": {
+          "x": 192,
+          "y": 288
+        },
+        "mummy_r2": {
+          "x": 208,
+          "y": 288
+        },
+        "mummy_u1": {
+          "x": 224,
+          "y": 288
+        },
+        "mummy_u2": {
+          "x": 240,
+          "y": 288
+        },
+        "necromancer_d1": {
+          "x": 256,
+          "y": 288
+        },
+        "necromancer_d2": {
+          "x": 272,
+          "y": 288
+        },
+        "necromancer_l1": {
+          "x": 288,
+          "y": 288
+        },
+        "necromancer_l2": {
+          "x": 304,
+          "y": 288
+        },
+        "necromancer_r1": {
+          "x": 320,
+          "y": 288
+        },
+        "necromancer_r2": {
+          "x": 336,
+          "y": 288
+        },
+        "necromancer_u1": {
+          "x": 352,
+          "y": 288
+        },
+        "necromancer_u2": {
+          "x": 368,
+          "y": 288
+        },
+        "paladin_d1": {
+          "x": 384,
+          "y": 288
+        },
+        "paladin_d2": {
+          "x": 400,
+          "y": 288
+        },
+        "paladin_l1": {
+          "x": 416,
+          "y": 288
+        },
+        "paladin_l2": {
+          "x": 432,
+          "y": 288
+        },
+        "paladin_r1": {
+          "x": 448,
+          "y": 288
+        },
+        "paladin_r2": {
+          "x": 464,
+          "y": 288
+        },
+        "paladin_u1": {
+          "x": 480,
+          "y": 288
+        },
+        "paladin_u2": {
+          "x": 496,
+          "y": 288
+        },
+        "phoenix_d1": {
+          "x": 0,
+          "y": 304
+        },
+        "phoenix_d2": {
+          "x": 16,
+          "y": 304
+        },
+        "phoenix_l1": {
+          "x": 32,
+          "y": 304
+        },
+        "phoenix_l2": {
+          "x": 48,
+          "y": 304
+        },
+        "phoenix_r1": {
+          "x": 64,
+          "y": 304
+        },
+        "phoenix_r2": {
+          "x": 80,
+          "y": 304
+        },
+        "phoenix_u1": {
+          "x": 96,
+          "y": 304
+        },
+        "phoenix_u2": {
+          "x": 112,
+          "y": 304
+        },
+        "pixie_d1": {
+          "x": 128,
+          "y": 304
+        },
+        "pixie_d2": {
+          "x": 144,
+          "y": 304
+        },
+        "pixie_l1": {
+          "x": 160,
+          "y": 304
+        },
+        "pixie_l2": {
+          "x": 176,
+          "y": 304
+        },
+        "pixie_r1": {
+          "x": 192,
+          "y": 304
+        },
+        "pixie_r2": {
+          "x": 208,
+          "y": 304
+        },
+        "pixie_u1": {
+          "x": 224,
+          "y": 304
+        },
+        "pixie_u2": {
+          "x": 240,
+          "y": 304
+        },
+        "plant_d1": {
+          "x": 256,
+          "y": 304
+        },
+        "plant_d2": {
+          "x": 272,
+          "y": 304
+        },
+        "plant_l1": {
+          "x": 288,
+          "y": 304
+        },
+        "plant_l2": {
+          "x": 304,
+          "y": 304
+        },
+        "plant_r1": {
+          "x": 320,
+          "y": 304
+        },
+        "plant_r2": {
+          "x": 336,
+          "y": 304
+        },
+        "plant_u1": {
+          "x": 352,
+          "y": 304
+        },
+        "plant_u2": {
+          "x": 368,
+          "y": 304
+        },
+        "queen_d1": {
+          "x": 384,
+          "y": 304
+        },
+        "queen_d2": {
+          "x": 400,
+          "y": 304
+        },
+        "queen_l1": {
+          "x": 416,
+          "y": 304
+        },
+        "queen_l2": {
+          "x": 432,
+          "y": 304
+        },
+        "queen_r1": {
+          "x": 448,
+          "y": 304
+        },
+        "queen_r2": {
+          "x": 464,
+          "y": 304
+        },
+        "queen_u1": {
+          "x": 480,
+          "y": 304
+        },
+        "queen_u2": {
+          "x": 496,
+          "y": 304
+        },
+        "rat_d1": {
+          "x": 0,
+          "y": 320
+        },
+        "rat_d2": {
+          "x": 16,
+          "y": 320
+        },
+        "rat_l1": {
+          "x": 32,
+          "y": 320
+        },
+        "rat_l2": {
+          "x": 48,
+          "y": 320
+        },
+        "rat_r1": {
+          "x": 64,
+          "y": 320
+        },
+        "rat_r2": {
+          "x": 80,
+          "y": 320
+        },
+        "rat_u1": {
+          "x": 96,
+          "y": 320
+        },
+        "rat_u2": {
+          "x": 112,
+          "y": 320
+        },
+        "reaper_d1": {
+          "x": 128,
+          "y": 320
+        },
+        "reaper_d2": {
+          "x": 144,
+          "y": 320
+        },
+        "reaper_l1": {
+          "x": 160,
+          "y": 320
+        },
+        "reaper_l2": {
+          "x": 176,
+          "y": 320
+        },
+        "reaper_r1": {
+          "x": 192,
+          "y": 320
+        },
+        "reaper_r2": {
+          "x": 208,
+          "y": 320
+        },
+        "reaper_u1": {
+          "x": 224,
+          "y": 320
+        },
+        "reaper_u2": {
+          "x": 240,
+          "y": 320
+        },
+        "rogue_d1": {
+          "x": 256,
+          "y": 320
+        },
+        "rogue_d2": {
+          "x": 272,
+          "y": 320
+        },
+        "rogue_l1": {
+          "x": 288,
+          "y": 320
+        },
+        "rogue_l2": {
+          "x": 304,
+          "y": 320
+        },
+        "rogue_r1": {
+          "x": 320,
+          "y": 320
+        },
+        "rogue_r2": {
+          "x": 336,
+          "y": 320
+        },
+        "rogue_u1": {
+          "x": 352,
+          "y": 320
+        },
+        "rogue_u2": {
+          "x": 368,
+          "y": 320
+        },
+        "satyr_d1": {
+          "x": 384,
+          "y": 320
+        },
+        "satyr_d2": {
+          "x": 400,
+          "y": 320
+        },
+        "satyr_l1": {
+          "x": 416,
+          "y": 320
+        },
+        "satyr_l2": {
+          "x": 432,
+          "y": 320
+        },
+        "satyr_r1": {
+          "x": 448,
+          "y": 320
+        },
+        "satyr_r2": {
+          "x": 464,
+          "y": 320
+        },
+        "satyr_u1": {
+          "x": 480,
+          "y": 320
+        },
+        "satyr_u2": {
+          "x": 496,
+          "y": 320
+        },
+        "skeleton_lich_d1": {
+          "x": 0,
+          "y": 336
+        },
+        "skeleton_lich_d2": {
+          "x": 16,
+          "y": 336
+        },
+        "skeleton_lich_l1": {
+          "x": 32,
+          "y": 336
+        },
+        "skeleton_lich_l2": {
+          "x": 48,
+          "y": 336
+        },
+        "skeleton_lich_r1": {
+          "x": 64,
+          "y": 336
+        },
+        "skeleton_lich_r2": {
+          "x": 80,
+          "y": 336
+        },
+        "skeleton_lich_u1": {
+          "x": 96,
+          "y": 336
+        },
+        "skeleton_lich_u2": {
+          "x": 112,
+          "y": 336
+        },
+        "skeleton_mage_d1": {
+          "x": 128,
+          "y": 336
+        },
+        "skeleton_mage_d2": {
+          "x": 144,
+          "y": 336
+        },
+        "skeleton_mage_l1": {
+          "x": 160,
+          "y": 336
+        },
+        "skeleton_mage_l2": {
+          "x": 176,
+          "y": 336
+        },
+        "skeleton_mage_r1": {
+          "x": 192,
+          "y": 336
+        },
+        "skeleton_mage_r2": {
+          "x": 208,
+          "y": 336
+        },
+        "skeleton_mage_u1": {
+          "x": 224,
+          "y": 336
+        },
+        "skeleton_mage_u2": {
+          "x": 240,
+          "y": 336
+        },
+        "skeleton_unarmed_d1": {
+          "x": 256,
+          "y": 336
+        },
+        "skeleton_unarmed_d2": {
+          "x": 272,
+          "y": 336
+        },
+        "skeleton_unarmed_l1": {
+          "x": 288,
+          "y": 336
+        },
+        "skeleton_unarmed_l2": {
+          "x": 304,
+          "y": 336
+        },
+        "skeleton_unarmed_r1": {
+          "x": 320,
+          "y": 336
+        },
+        "skeleton_unarmed_r2": {
+          "x": 336,
+          "y": 336
+        },
+        "skeleton_unarmed_u1": {
+          "x": 352,
+          "y": 336
+        },
+        "skeleton_unarmed_u2": {
+          "x": 368,
+          "y": 336
+        },
+        "skeleton_warrior_d1": {
+          "x": 384,
+          "y": 336
+        },
+        "skeleton_warrior_d2": {
+          "x": 400,
+          "y": 336
+        },
+        "skeleton_warrior_l1": {
+          "x": 416,
+          "y": 336
+        },
+        "skeleton_warrior_l2": {
+          "x": 432,
+          "y": 336
+        },
+        "skeleton_warrior_r1": {
+          "x": 448,
+          "y": 336
+        },
+        "skeleton_warrior_r2": {
+          "x": 464,
+          "y": 336
+        },
+        "skeleton_warrior_u1": {
+          "x": 480,
+          "y": 336
+        },
+        "skeleton_warrior_u2": {
+          "x": 496,
+          "y": 336
+        },
+        "slime_d1": {
+          "x": 0,
+          "y": 352
+        },
+        "slime_d2": {
+          "x": 16,
+          "y": 352
+        },
+        "slime_l1": {
+          "x": 32,
+          "y": 352
+        },
+        "slime_l2": {
+          "x": 48,
+          "y": 352
+        },
+        "slime_r1": {
+          "x": 64,
+          "y": 352
+        },
+        "slime_r2": {
+          "x": 80,
+          "y": 352
+        },
+        "slime_u1": {
+          "x": 96,
+          "y": 352
+        },
+        "slime_u2": {
+          "x": 112,
+          "y": 352
+        },
+        "snake_d1": {
+          "x": 128,
+          "y": 352
+        },
+        "snake_d2": {
+          "x": 144,
+          "y": 352
+        },
+        "snake_l1": {
+          "x": 160,
+          "y": 352
+        },
+        "snake_l2": {
+          "x": 176,
+          "y": 352
+        },
+        "snake_r1": {
+          "x": 192,
+          "y": 352
+        },
+        "snake_r2": {
+          "x": 208,
+          "y": 352
+        },
+        "snake_u1": {
+          "x": 224,
+          "y": 352
+        },
+        "snake_u2": {
+          "x": 240,
+          "y": 352
+        },
+        "spider_d1": {
+          "x": 256,
+          "y": 352
+        },
+        "spider_d2": {
+          "x": 272,
+          "y": 352
+        },
+        "spider_l1": {
+          "x": 288,
+          "y": 352
+        },
+        "spider_l2": {
+          "x": 304,
+          "y": 352
+        },
+        "spider_r1": {
+          "x": 320,
+          "y": 352
+        },
+        "spider_r2": {
+          "x": 336,
+          "y": 352
+        },
+        "spider_u1": {
+          "x": 352,
+          "y": 352
+        },
+        "spider_u2": {
+          "x": 368,
+          "y": 352
+        },
+        "treant_d1": {
+          "x": 384,
+          "y": 352
+        },
+        "treant_d2": {
+          "x": 400,
+          "y": 352
+        },
+        "treant_l1": {
+          "x": 416,
+          "y": 352
+        },
+        "treant_l2": {
+          "x": 432,
+          "y": 352
+        },
+        "treant_r1": {
+          "x": 448,
+          "y": 352
+        },
+        "treant_r2": {
+          "x": 464,
+          "y": 352
+        },
+        "treant_u1": {
+          "x": 480,
+          "y": 352
+        },
+        "treant_u2": {
+          "x": 496,
+          "y": 352
+        },
+        "troll_d1": {
+          "x": 0,
+          "y": 368
+        },
+        "troll_d2": {
+          "x": 16,
+          "y": 368
+        },
+        "troll_l1": {
+          "x": 32,
+          "y": 368
+        },
+        "troll_l2": {
+          "x": 48,
+          "y": 368
+        },
+        "troll_r1": {
+          "x": 64,
+          "y": 368
+        },
+        "troll_r2": {
+          "x": 80,
+          "y": 368
+        },
+        "troll_u1": {
+          "x": 96,
+          "y": 368
+        },
+        "troll_u2": {
+          "x": 112,
+          "y": 368
+        },
+        "unicorn_d1": {
+          "x": 128,
+          "y": 368
+        },
+        "unicorn_d2": {
+          "x": 144,
+          "y": 368
+        },
+        "unicorn_l1": {
+          "x": 160,
+          "y": 368
+        },
+        "unicorn_l2": {
+          "x": 176,
+          "y": 368
+        },
+        "unicorn_r1": {
+          "x": 192,
+          "y": 368
+        },
+        "unicorn_r2": {
+          "x": 208,
+          "y": 368
+        },
+        "unicorn_u1": {
+          "x": 224,
+          "y": 368
+        },
+        "unicorn_u2": {
+          "x": 240,
+          "y": 368
+        },
+        "vampire_d1": {
+          "x": 256,
+          "y": 368
+        },
+        "vampire_d2": {
+          "x": 272,
+          "y": 368
+        },
+        "vampire_l1": {
+          "x": 288,
+          "y": 368
+        },
+        "vampire_l2": {
+          "x": 304,
+          "y": 368
+        },
+        "vampire_r1": {
+          "x": 320,
+          "y": 368
+        },
+        "vampire_r2": {
+          "x": 336,
+          "y": 368
+        },
+        "vampire_u1": {
+          "x": 352,
+          "y": 368
+        },
+        "vampire_u2": {
+          "x": 368,
+          "y": 368
+        },
+        "villager_f_d1": {
+          "x": 384,
+          "y": 368
+        },
+        "villager_f_d2": {
+          "x": 400,
+          "y": 368
+        },
+        "villager_f_l1": {
+          "x": 416,
+          "y": 368
+        },
+        "villager_f_l2": {
+          "x": 432,
+          "y": 368
+        },
+        "villager_f_r1": {
+          "x": 448,
+          "y": 368
+        },
+        "villager_f_r2": {
+          "x": 464,
+          "y": 368
+        },
+        "villager_f_u1": {
+          "x": 480,
+          "y": 368
+        },
+        "villager_f_u2": {
+          "x": 496,
+          "y": 368
+        },
+        "villager_m_d1": {
+          "x": 0,
+          "y": 384
+        },
+        "villager_m_d2": {
+          "x": 16,
+          "y": 384
+        },
+        "villager_m_l1": {
+          "x": 32,
+          "y": 384
+        },
+        "villager_m_l2": {
+          "x": 48,
+          "y": 384
+        },
+        "villager_m_r1": {
+          "x": 64,
+          "y": 384
+        },
+        "villager_m_r2": {
+          "x": 80,
+          "y": 384
+        },
+        "villager_m_u1": {
+          "x": 96,
+          "y": 384
+        },
+        "villager_m_u2": {
+          "x": 112,
+          "y": 384
+        },
+        "void_d1": {
+          "x": 128,
+          "y": 384
+        },
+        "void_d2": {
+          "x": 144,
+          "y": 384
+        },
+        "void_l1": {
+          "x": 160,
+          "y": 384
+        },
+        "void_l2": {
+          "x": 176,
+          "y": 384
+        },
+        "void_r1": {
+          "x": 192,
+          "y": 384
+        },
+        "void_r2": {
+          "x": 208,
+          "y": 384
+        },
+        "void_u1": {
+          "x": 224,
+          "y": 384
+        },
+        "void_u2": {
+          "x": 240,
+          "y": 384
+        },
+        "witch_d1": {
+          "x": 256,
+          "y": 384
+        },
+        "witch_d2": {
+          "x": 272,
+          "y": 384
+        },
+        "witch_l1": {
+          "x": 288,
+          "y": 384
+        },
+        "witch_l2": {
+          "x": 304,
+          "y": 384
+        },
+        "witch_r1": {
+          "x": 320,
+          "y": 384
+        },
+        "witch_r2": {
+          "x": 336,
+          "y": 384
+        },
+        "witch_u1": {
+          "x": 352,
+          "y": 384
+        },
+        "witch_u2": {
+          "x": 368,
+          "y": 384
+        },
+        "wizard_d1": {
+          "x": 384,
+          "y": 384
+        },
+        "wizard_d2": {
+          "x": 400,
+          "y": 384
+        },
+        "wizard_l1": {
+          "x": 416,
+          "y": 384
+        },
+        "wizard_l2": {
+          "x": 432,
+          "y": 384
+        },
+        "wizard_r1": {
+          "x": 448,
+          "y": 384
+        },
+        "wizard_r2": {
+          "x": 464,
+          "y": 384
+        },
+        "wizard_u1": {
+          "x": 480,
+          "y": 384
+        },
+        "wizard_u2": {
+          "x": 496,
+          "y": 384
+        },
+        "wolf_d1": {
+          "x": 0,
+          "y": 400
+        },
+        "wolf_d2": {
+          "x": 16,
+          "y": 400
+        },
+        "wolf_l1": {
+          "x": 32,
+          "y": 400
+        },
+        "wolf_l2": {
+          "x": 48,
+          "y": 400
+        },
+        "wolf_r1": {
+          "x": 64,
+          "y": 400
+        },
+        "wolf_r2": {
+          "x": 80,
+          "y": 400
+        },
+        "wolf_u1": {
+          "x": 96,
+          "y": 400
+        },
+        "wolf_u2": {
+          "x": 112,
+          "y": 400
+        },
+        "wraith_d1": {
+          "x": 128,
+          "y": 400
+        },
+        "wraith_d2": {
+          "x": 144,
+          "y": 400
+        },
+        "wraith_l1": {
+          "x": 160,
+          "y": 400
+        },
+        "wraith_l2": {
+          "x": 176,
+          "y": 400
+        },
+        "wraith_r1": {
+          "x": 192,
+          "y": 400
+        },
+        "wraith_r2": {
+          "x": 208,
+          "y": 400
+        },
+        "wraith_u1": {
+          "x": 224,
+          "y": 400
+        },
+        "wraith_u2": {
+          "x": 240,
+          "y": 400
+        },
+        "yeti_d1": {
+          "x": 256,
+          "y": 400
+        },
+        "yeti_d2": {
+          "x": 272,
+          "y": 400
+        },
+        "yeti_l1": {
+          "x": 288,
+          "y": 400
+        },
+        "yeti_l2": {
+          "x": 304,
+          "y": 400
+        },
+        "yeti_r1": {
+          "x": 320,
+          "y": 400
+        },
+        "yeti_r2": {
+          "x": 336,
+          "y": 400
+        },
+        "yeti_u1": {
+          "x": 352,
+          "y": 400
+        },
+        "yeti_u2": {
+          "x": 368,
+          "y": 400
+        },
+        "zombie_d1": {
+          "x": 384,
+          "y": 400
+        },
+        "zombie_d2": {
+          "x": 400,
+          "y": 400
+        },
+        "zombie_l1": {
+          "x": 416,
+          "y": 400
+        },
+        "zombie_l2": {
+          "x": 432,
+          "y": 400
+        },
+        "zombie_r1": {
+          "x": 448,
+          "y": 400
+        },
+        "zombie_r2": {
+          "x": 464,
+          "y": 400
+        },
+        "zombie_u1": {
+          "x": 480,
+          "y": 400
+        },
+        "zombie_u2": {
+          "x": 496,
+          "y": 400
+        }
+      }
+    },
+    "portraits": {
+      "size": {
+        "height": 32,
+        "width": 32
+      },
+      "tiles": {
+        "archer_1f": {
+          "x": 0,
+          "y": 624
+        },
+        "archer_1m": {
+          "x": 32,
+          "y": 624
+        },
+        "archer_2f": {
+          "x": 64,
+          "y": 624
+        },
+        "archer_2m": {
+          "x": 96,
+          "y": 624
+        },
+        "archer_3f": {
+          "x": 128,
+          "y": 624
+        },
+        "archer_3m": {
+          "x": 160,
+          "y": 624
+        },
+        "archer_4f": {
+          "x": 192,
+          "y": 624
+        },
+        "archer_4m": {
+          "x": 224,
+          "y": 624
+        },
+        "archer_5f": {
+          "x": 256,
+          "y": 624
+        },
+        "archer_5m": {
+          "x": 288,
+          "y": 624
+        },
+        "berserker_1f": {
+          "x": 320,
+          "y": 624
+        },
+        "berserker_1m": {
+          "x": 352,
+          "y": 624
+        },
+        "berserker_2f": {
+          "x": 384,
+          "y": 624
+        },
+        "berserker_2m": {
+          "x": 416,
+          "y": 624
+        },
+        "berserker_3f": {
+          "x": 448,
+          "y": 624
+        },
+        "berserker_3m": {
+          "x": 480,
+          "y": 624
+        },
+        "berserker_4f": {
+          "x": 0,
+          "y": 656
+        },
+        "berserker_4m": {
+          "x": 32,
+          "y": 656
+        },
+        "berserker_5f": {
+          "x": 64,
+          "y": 656
+        },
+        "berserker_5m": {
+          "x": 96,
+          "y": 656
+        },
+        "cleric_1f": {
+          "x": 128,
+          "y": 656
+        },
+        "cleric_1m": {
+          "x": 160,
+          "y": 656
+        },
+        "cleric_2f": {
+          "x": 192,
+          "y": 656
+        },
+        "cleric_2m": {
+          "x": 224,
+          "y": 656
+        },
+        "cleric_3f": {
+          "x": 256,
+          "y": 656
+        },
+        "cleric_3m": {
+          "x": 288,
+          "y": 656
+        },
+        "cleric_4f": {
+          "x": 320,
+          "y": 656
+        },
+        "cleric_4m": {
+          "x": 352,
+          "y": 656
+        },
+        "cleric_5f": {
+          "x": 384,
+          "y": 656
+        },
+        "cleric_5m": {
+          "x": 416,
+          "y": 656
+        },
+        "druid_1f": {
+          "x": 448,
+          "y": 656
+        },
+        "druid_1m": {
+          "x": 480,
+          "y": 656
+        },
+        "druid_2f": {
+          "x": 0,
+          "y": 688
+        },
+        "druid_2m": {
+          "x": 32,
+          "y": 688
+        },
+        "druid_3f": {
+          "x": 64,
+          "y": 688
+        },
+        "druid_3m": {
+          "x": 96,
+          "y": 688
+        },
+        "druid_4f": {
+          "x": 128,
+          "y": 688
+        },
+        "druid_4m": {
+          "x": 160,
+          "y": 688
+        },
+        "druid_5f": {
+          "x": 192,
+          "y": 688
+        },
+        "druid_5m": {
+          "x": 224,
+          "y": 688
+        },
+        "fighter_1f": {
+          "x": 256,
+          "y": 688
+        },
+        "fighter_1m": {
+          "x": 288,
+          "y": 688
+        },
+        "fighter_2f": {
+          "x": 320,
+          "y": 688
+        },
+        "fighter_2m": {
+          "x": 352,
+          "y": 688
+        },
+        "fighter_3f": {
+          "x": 384,
+          "y": 688
+        },
+        "fighter_3m": {
+          "x": 416,
+          "y": 688
+        },
+        "fighter_4f": {
+          "x": 448,
+          "y": 688
+        },
+        "fighter_4m": {
+          "x": 480,
+          "y": 688
+        },
+        "fighter_5f": {
+          "x": 0,
+          "y": 720
+        },
+        "fighter_5m": {
+          "x": 32,
+          "y": 720
+        },
+        "mercenary_1f": {
+          "x": 64,
+          "y": 720
+        },
+        "mercenary_1m": {
+          "x": 96,
+          "y": 720
+        },
+        "mercenary_2f": {
+          "x": 128,
+          "y": 720
+        },
+        "mercenary_2m": {
+          "x": 160,
+          "y": 720
+        },
+        "mercenary_3f": {
+          "x": 192,
+          "y": 720
+        },
+        "mercenary_3m": {
+          "x": 224,
+          "y": 720
+        },
+        "mercenary_4f": {
+          "x": 256,
+          "y": 720
+        },
+        "mercenary_4m": {
+          "x": 288,
+          "y": 720
+        },
+        "mercenary_5f": {
+          "x": 320,
+          "y": 720
+        },
+        "mercenary_5m": {
+          "x": 352,
+          "y": 720
+        },
+        "minstrel_1f": {
+          "x": 384,
+          "y": 720
+        },
+        "minstrel_1m": {
+          "x": 416,
+          "y": 720
+        },
+        "minstrel_2f": {
+          "x": 448,
+          "y": 720
+        },
+        "minstrel_2m": {
+          "x": 480,
+          "y": 720
+        },
+        "minstrel_3f": {
+          "x": 0,
+          "y": 752
+        },
+        "minstrel_3m": {
+          "x": 32,
+          "y": 752
+        },
+        "minstrel_4f": {
+          "x": 64,
+          "y": 752
+        },
+        "minstrel_4m": {
+          "x": 96,
+          "y": 752
+        },
+        "minstrel_5f": {
+          "x": 128,
+          "y": 752
+        },
+        "minstrel_5m": {
+          "x": 160,
+          "y": 752
+        },
+        "necromancer_1f": {
+          "x": 192,
+          "y": 752
+        },
+        "necromancer_1m": {
+          "x": 224,
+          "y": 752
+        },
+        "necromancer_2f": {
+          "x": 256,
+          "y": 752
+        },
+        "necromancer_2m": {
+          "x": 288,
+          "y": 752
+        },
+        "necromancer_3f": {
+          "x": 320,
+          "y": 752
+        },
+        "necromancer_3m": {
+          "x": 352,
+          "y": 752
+        },
+        "necromancer_4f": {
+          "x": 384,
+          "y": 752
+        },
+        "necromancer_4m": {
+          "x": 416,
+          "y": 752
+        },
+        "necromancer_5f": {
+          "x": 448,
+          "y": 752
+        },
+        "necromancer_5m": {
+          "x": 480,
+          "y": 752
+        },
+        "paladin_1f": {
+          "x": 0,
+          "y": 784
+        },
+        "paladin_1m": {
+          "x": 32,
+          "y": 784
+        },
+        "paladin_2f": {
+          "x": 64,
+          "y": 784
+        },
+        "paladin_2m": {
+          "x": 96,
+          "y": 784
+        },
+        "paladin_3f": {
+          "x": 128,
+          "y": 784
+        },
+        "paladin_3m": {
+          "x": 160,
+          "y": 784
+        },
+        "paladin_4f": {
+          "x": 192,
+          "y": 784
+        },
+        "paladin_4m": {
+          "x": 224,
+          "y": 784
+        },
+        "paladin_5f": {
+          "x": 256,
+          "y": 784
+        },
+        "paladin_5m": {
+          "x": 288,
+          "y": 784
+        },
+        "rogue_1f": {
+          "x": 320,
+          "y": 784
+        },
+        "rogue_1m": {
+          "x": 352,
+          "y": 784
+        },
+        "rogue_2f": {
+          "x": 384,
+          "y": 784
+        },
+        "rogue_2m": {
+          "x": 416,
+          "y": 784
+        },
+        "rogue_3f": {
+          "x": 448,
+          "y": 784
+        },
+        "rogue_3m": {
+          "x": 480,
+          "y": 784
+        },
+        "rogue_4f": {
+          "x": 0,
+          "y": 816
+        },
+        "rogue_4m": {
+          "x": 32,
+          "y": 816
+        },
+        "rogue_5f": {
+          "x": 64,
+          "y": 816
+        },
+        "rogue_5m": {
+          "x": 96,
+          "y": 816
+        },
+        "witch_1f": {
+          "x": 128,
+          "y": 816
+        },
+        "witch_1m": {
+          "x": 160,
+          "y": 816
+        },
+        "witch_2f": {
+          "x": 192,
+          "y": 816
+        },
+        "witch_2m": {
+          "x": 224,
+          "y": 816
+        },
+        "witch_3f": {
+          "x": 256,
+          "y": 816
+        },
+        "witch_3m": {
+          "x": 288,
+          "y": 816
+        },
+        "witch_4f": {
+          "x": 320,
+          "y": 816
+        },
+        "witch_4m": {
+          "x": 352,
+          "y": 816
+        },
+        "witch_5f": {
+          "x": 384,
+          "y": 816
+        },
+        "witch_5m": {
+          "x": 416,
+          "y": 816
+        },
+        "wizard_1f": {
+          "x": 448,
+          "y": 816
+        },
+        "wizard_1m": {
+          "x": 480,
+          "y": 816
+        },
+        "wizard_2f": {
+          "x": 0,
+          "y": 848
+        },
+        "wizard_2m": {
+          "x": 32,
+          "y": 848
+        },
+        "wizard_3f": {
+          "x": 64,
+          "y": 848
+        },
+        "wizard_3m": {
+          "x": 96,
+          "y": 848
+        },
+        "wizard_4f": {
+          "x": 128,
+          "y": 848
+        },
+        "wizard_4m": {
+          "x": 160,
+          "y": 848
+        },
+        "wizard_5f": {
+          "x": 192,
+          "y": 848
+        },
+        "wizard_5m": {
+          "x": 224,
+          "y": 848
+        }
+      }
+    },
+    "world": {
+      "size": {
+        "height": 16,
+        "width": 16
+      },
+      "tiles": {
+        "none": {
+          "x": 240,
+          "y": 144
+        },
+        "acid": {
+          "x": 0,
+          "y": 0
+        },
+        "acid_a1": {
+          "x": 16,
+          "y": 0
+        },
+        "acid_a2": {
+          "x": 32,
+          "y": 0
+        },
+        "acid_edge": {
+          "x": 48,
+          "y": 0
+        },
+        "acid_edge_a1": {
+          "x": 64,
+          "y": 0
+        },
+        "acid_edge_a2": {
+          "x": 80,
+          "y": 0
+        },
+        "bed": {
+          "x": 96,
+          "y": 0
+        },
+        "blank": {
+          "x": 112,
+          "y": 0
+        },
+        "blood_a": {
+          "x": 128,
+          "y": 0
+        },
+        "blood_b": {
+          "x": 144,
+          "y": 0
+        },
+        "blood_bone": {
+          "x": 160,
+          "y": 0
+        },
+        "blood_c": {
+          "x": 176,
+          "y": 0
+        },
+        "blood_d": {
+          "x": 192,
+          "y": 0
+        },
+        "bones_a": {
+          "x": 208,
+          "y": 0
+        },
+        "bones_b": {
+          "x": 224,
+          "y": 0
+        },
+        "bones_d": {
+          "x": 240,
+          "y": 0
+        },
+        "bookshelf_a": {
+          "x": 256,
+          "y": 0
+        },
+        "bookshelf_b": {
+          "x": 272,
+          "y": 0
+        },
+        "campfire1": {
+          "x": 288,
+          "y": 0
+        },
+        "campfire2": {
+          "x": 304,
+          "y": 0
+        },
+        "campfire_stones": {
+          "x": 320,
+          "y": 0
+        },
+        "candles_a1": {
+          "x": 336,
+          "y": 0
+        },
+        "candles_a2": {
+          "x": 352,
+          "y": 0
+        },
+        "candles_b1": {
+          "x": 368,
+          "y": 0
+        },
+        "candles_b2": {
+          "x": 384,
+          "y": 0
+        },
+        "candles_c1": {
+          "x": 400,
+          "y": 0
+        },
+        "candles_c2": {
+          "x": 416,
+          "y": 0
+        },
+        "cauldron1": {
+          "x": 432,
+          "y": 0
+        },
+        "cauldron2": {
+          "x": 448,
+          "y": 0
+        },
+        "chair": {
+          "x": 464,
+          "y": 0
+        },
+        "chest": {
+          "x": 480,
+          "y": 0
+        },
+        "chest_empty": {
+          "x": 496,
+          "y": 0
+        },
+        "crate": {
+          "x": 0,
+          "y": 16
+        },
+        "crate_broken": {
+          "x": 16,
+          "y": 16
+        },
+        "door_evil_h_closed": {
+          "x": 32,
+          "y": 16
+        },
+        "door_evil_h_open": {
+          "x": 48,
+          "y": 16
+        },
+        "door_evil_v_closed1": {
+          "x": 64,
+          "y": 16
+        },
+        "door_evil_v_closed2": {
+          "x": 80,
+          "y": 16
+        },
+        "door_evil_v_open1": {
+          "x": 96,
+          "y": 16
+        },
+        "door_evil_v_open2": {
+          "x": 112,
+          "y": 16
+        },
+        "door_gate_h_closed": {
+          "x": 128,
+          "y": 16
+        },
+        "door_gate_h_open": {
+          "x": 144,
+          "y": 16
+        },
+        "door_gate_v_closed": {
+          "x": 160,
+          "y": 16
+        },
+        "door_gate_v_closed2": {
+          "x": 176,
+          "y": 16
+        },
+        "door_gate_v_open1": {
+          "x": 192,
+          "y": 16
+        },
+        "door_gate_v_open2": {
+          "x": 208,
+          "y": 16
+        },
+        "door_stone_h_closed": {
+          "x": 224,
+          "y": 16
+        },
+        "door_stone_h_open": {
+          "x": 240,
+          "y": 16
+        },
+        "door_stone_v_closed1": {
+          "x": 256,
+          "y": 16
+        },
+        "door_stone_v_closed2": {
+          "x": 272,
+          "y": 16
+        },
+        "door_stone_v_open1": {
+          "x": 288,
+          "y": 16
+        },
+        "door_stone_v_open2": {
+          "x": 304,
+          "y": 16
+        },
+        "door_wood_h_closed": {
+          "x": 320,
+          "y": 16
+        },
+        "door_wood_h_closed2": {
+          "x": 336,
+          "y": 16
+        },
+        "door_wood_h_open": {
+          "x": 352,
+          "y": 16
+        },
+        "door_wood_v_closed1": {
+          "x": 368,
+          "y": 16
+        },
+        "door_wood_v_open1": {
+          "x": 384,
+          "y": 16
+        },
+        "door_wood_v_open2": {
+          "x": 400,
+          "y": 16
+        },
+        "floor_carpet_a": {
+          "x": 416,
+          "y": 16
+        },
+        "floor_carpet_b": {
+          "x": 432,
+          "y": 16
+        },
+        "floor_carpet_c": {
+          "x": 448,
+          "y": 16
+        },
+        "floor_carpet_d": {
+          "x": 464,
+          "y": 16
+        },
+        "floor_carpet_e": {
+          "x": 480,
+          "y": 16
+        },
+        "floor_cobble2_a": {
+          "x": 496,
+          "y": 16
+        },
+        "floor_cobble2_b": {
+          "x": 0,
+          "y": 32
+        },
+        "floor_cobble2_c": {
+          "x": 16,
+          "y": 32
+        },
+        "floor_cobble2_d": {
+          "x": 32,
+          "y": 32
+        },
+        "floor_cobble2_drain": {
+          "x": 48,
+          "y": 32
+        },
+        "floor_cobble2_e": {
+          "x": 64,
+          "y": 32
+        },
+        "floor_cobble2_f": {
+          "x": 80,
+          "y": 32
+        },
+        "floor_cobble2_pit_edge": {
+          "x": 96,
+          "y": 32
+        },
+        "floor_cobble_a": {
+          "x": 128,
+          "y": 32
+        },
+        "floor_cobble_a-119": {
+          "x": 112,
+          "y": 32
+        },
+        "floor_cobble_b": {
+          "x": 160,
+          "y": 32
+        },
+        "floor_cobble_b-120": {
+          "x": 144,
+          "y": 32
+        },
+        "floor_cobble_c": {
+          "x": 192,
+          "y": 32
+        },
+        "floor_cobble_c-121": {
+          "x": 176,
+          "y": 32
+        },
+        "floor_cobble_d": {
+          "x": 224,
+          "y": 32
+        },
+        "floor_cobble_d-122": {
+          "x": 208,
+          "y": 32
+        },
+        "floor_cobble_drain": {
+          "x": 240,
+          "y": 32
+        },
+        "floor_cobble_e": {
+          "x": 272,
+          "y": 32
+        },
+        "floor_cobble_e-123": {
+          "x": 256,
+          "y": 32
+        },
+        "floor_cobble_f": {
+          "x": 288,
+          "y": 32
+        },
+        "floor_cobble_pit_edge": {
+          "x": 304,
+          "y": 32
+        },
+        "floor_dirt_a": {
+          "x": 320,
+          "y": 32
+        },
+        "floor_dirt_b": {
+          "x": 336,
+          "y": 32
+        },
+        "floor_dirt_c": {
+          "x": 352,
+          "y": 32
+        },
+        "floor_dirt_d": {
+          "x": 368,
+          "y": 32
+        },
+        "floor_dirt_e": {
+          "x": 384,
+          "y": 32
+        },
+        "floor_dirt_f": {
+          "x": 400,
+          "y": 32
+        },
+        "floor_dirt_hole": {
+          "x": 416,
+          "y": 32
+        },
+        "floor_dirt_pit_edge": {
+          "x": 432,
+          "y": 32
+        },
+        "floor_grass_a": {
+          "x": 448,
+          "y": 32
+        },
+        "floor_grass_b": {
+          "x": 464,
+          "y": 32
+        },
+        "floor_grass_c": {
+          "x": 480,
+          "y": 32
+        },
+        "floor_grass_d": {
+          "x": 496,
+          "y": 32
+        },
+        "floor_grass_e": {
+          "x": 0,
+          "y": 48
+        },
+        "floor_grass_f": {
+          "x": 16,
+          "y": 48
+        },
+        "floor_grass_hole": {
+          "x": 32,
+          "y": 48
+        },
+        "floor_grass_path_a": {
+          "x": 48,
+          "y": 48
+        },
+        "floor_grass_path_b": {
+          "x": 64,
+          "y": 48
+        },
+        "floor_grass_path_d": {
+          "x": 80,
+          "y": 48
+        },
+        "floor_grass_pit_edge": {
+          "x": 96,
+          "y": 48
+        },
+        "floor_grass_tile_c": {
+          "x": 112,
+          "y": 48
+        },
+        "floor_mossy_a": {
+          "x": 128,
+          "y": 48
+        },
+        "floor_mossy_b": {
+          "x": 144,
+          "y": 48
+        },
+        "floor_mossy_c": {
+          "x": 160,
+          "y": 48
+        },
+        "floor_mossy_d": {
+          "x": 176,
+          "y": 48
+        },
+        "floor_mossy_e": {
+          "x": 192,
+          "y": 48
+        },
+        "floor_pit": {
+          "x": 208,
+          "y": 48
+        },
+        "floor_tile2_a": {
+          "x": 224,
+          "y": 48
+        },
+        "floor_tile2_b": {
+          "x": 240,
+          "y": 48
+        },
+        "floor_tile2_c": {
+          "x": 256,
+          "y": 48
+        },
+        "floor_tile2_d": {
+          "x": 272,
+          "y": 48
+        },
+        "floor_tile2_e": {
+          "x": 288,
+          "y": 48
+        },
+        "floor_tile3_a": {
+          "x": 304,
+          "y": 48
+        },
+        "floor_tile3_b": {
+          "x": 320,
+          "y": 48
+        },
+        "floor_tile3_c": {
+          "x": 336,
+          "y": 48
+        },
+        "floor_tile3_d": {
+          "x": 352,
+          "y": 48
+        },
+        "floor_tile3_e": {
+          "x": 368,
+          "y": 48
+        },
+        "floor_tile_a": {
+          "x": 384,
+          "y": 48
+        },
+        "floor_tile_b": {
+          "x": 400,
+          "y": 48
+        },
+        "floor_tile_c": {
+          "x": 416,
+          "y": 48
+        },
+        "floor_tile_d": {
+          "x": 432,
+          "y": 48
+        },
+        "floor_tile_e": {
+          "x": 448,
+          "y": 48
+        },
+        "floor_wood_a": {
+          "x": 464,
+          "y": 48
+        },
+        "floor_wood_b": {
+          "x": 480,
+          "y": 48
+        },
+        "floor_wood_c": {
+          "x": 496,
+          "y": 48
+        },
+        "floor_wood_d": {
+          "x": 0,
+          "y": 64
+        },
+        "grass_a": {
+          "x": 16,
+          "y": 64
+        },
+        "grass_b": {
+          "x": 32,
+          "y": 64
+        },
+        "grass_c": {
+          "x": 48,
+          "y": 64
+        },
+        "grass_d": {
+          "x": 64,
+          "y": 64
+        },
+        "grass_e": {
+          "x": 80,
+          "y": 64
+        },
+        "grass_root_a": {
+          "x": 96,
+          "y": 64
+        },
+        "grass_root_b": {
+          "x": 112,
+          "y": 64
+        },
+        "grass_root_c": {
+          "x": 128,
+          "y": 64
+        },
+        "grass_root_d": {
+          "x": 144,
+          "y": 64
+        },
+        "grass_root_e": {
+          "x": 160,
+          "y": 64
+        },
+        "house_door_closed": {
+          "x": 176,
+          "y": 64
+        },
+        "house_door_open": {
+          "x": 192,
+          "y": 64
+        },
+        "house_roof_a": {
+          "x": 208,
+          "y": 64
+        },
+        "house_roof_b": {
+          "x": 224,
+          "y": 64
+        },
+        "house_roof_c": {
+          "x": 240,
+          "y": 64
+        },
+        "house_roof_edge_a": {
+          "x": 256,
+          "y": 64
+        },
+        "house_roof_edge_b": {
+          "x": 272,
+          "y": 64
+        },
+        "house_wall": {
+          "x": 288,
+          "y": 64
+        },
+        "house_wall_lit": {
+          "x": 304,
+          "y": 64
+        },
+        "lava": {
+          "x": 320,
+          "y": 64
+        },
+        "lava_a1": {
+          "x": 336,
+          "y": 64
+        },
+        "lava_a2": {
+          "x": 352,
+          "y": 64
+        },
+        "lava_edge": {
+          "x": 368,
+          "y": 64
+        },
+        "lava_edge_a1": {
+          "x": 384,
+          "y": 64
+        },
+        "lava_edge_a2": {
+          "x": 400,
+          "y": 64
+        },
+        "level_right": {
+          "x": 416,
+          "y": 64
+        },
+        "lever_left": {
+          "x": 432,
+          "y": 64
+        },
+        "lilypad_a1": {
+          "x": 448,
+          "y": 64
+        },
+        "lilypad_a2": {
+          "x": 464,
+          "y": 64
+        },
+        "lilypad_b1": {
+          "x": 480,
+          "y": 64
+        },
+        "lilypad_b2": {
+          "x": 496,
+          "y": 64
+        },
+        "lilypad_c1": {
+          "x": 0,
+          "y": 80
+        },
+        "lilypad_c2": {
+          "x": 16,
+          "y": 80
+        },
+        "lilypad_d1": {
+          "x": 32,
+          "y": 80
+        },
+        "lilypad_d2": {
+          "x": 48,
+          "y": 80
+        },
+        "magic_a": {
+          "x": 64,
+          "y": 80
+        },
+        "magic_b": {
+          "x": 80,
+          "y": 80
+        },
+        "magic_c": {
+          "x": 96,
+          "y": 80
+        },
+        "magic_d": {
+          "x": 112,
+          "y": 80
+        },
+        "magic_e1": {
+          "x": 128,
+          "y": 80
+        },
+        "magic_e2": {
+          "x": 144,
+          "y": 80
+        },
+        "mud_a1": {
+          "x": 160,
+          "y": 80
+        },
+        "mud_a2": {
+          "x": 176,
+          "y": 80
+        },
+        "mud_edge_a1": {
+          "x": 192,
+          "y": 80
+        },
+        "mud_edge_a2": {
+          "x": 208,
+          "y": 80
+        },
+        "murky_a1": {
+          "x": 224,
+          "y": 80
+        },
+        "murky_a2": {
+          "x": 240,
+          "y": 80
+        },
+        "murky_edge_a1": {
+          "x": 256,
+          "y": 80
+        },
+        "murky_edge_a2": {
+          "x": 272,
+          "y": 80
+        },
+        "mushroom_pink": {
+          "x": 288,
+          "y": 80
+        },
+        "mushroom_red": {
+          "x": 304,
+          "y": 80
+        },
+        "mushroom_yellow": {
+          "x": 320,
+          "y": 80
+        },
+        "shadow": {
+          "x": 336,
+          "y": 80
+        },
+        "shrub_a": {
+          "x": 352,
+          "y": 80
+        },
+        "shrub_b": {
+          "x": 368,
+          "y": 80
+        },
+        "sign_blank": {
+          "x": 384,
+          "y": 80
+        },
+        "sign_inn": {
+          "x": 400,
+          "y": 80
+        },
+        "sign_potions": {
+          "x": 416,
+          "y": 80
+        },
+        "sign_weapons": {
+          "x": 432,
+          "y": 80
+        },
+        "slab_a": {
+          "x": 448,
+          "y": 80
+        },
+        "slab_b": {
+          "x": 464,
+          "y": 80
+        },
+        "slab_left": {
+          "x": 480,
+          "y": 80
+        },
+        "slab_middle": {
+          "x": 496,
+          "y": 80
+        },
+        "slab_right": {
+          "x": 0,
+          "y": 96
+        },
+        "stalagmite_a": {
+          "x": 16,
+          "y": 96
+        },
+        "stalagmite_b": {
+          "x": 32,
+          "y": 96
+        },
+        "statue_tentacle": {
+          "x": 48,
+          "y": 96
+        },
+        "statue_warrior": {
+          "x": 64,
+          "y": 96
+        },
+        "statue_winged": {
+          "x": 80,
+          "y": 96
+        },
+        "stone_cave": {
+          "x": 96,
+          "y": 96
+        },
+        "stone_grey": {
+          "x": 112,
+          "y": 96
+        },
+        "swamp": {
+          "x": 128,
+          "y": 96
+        },
+        "swamp_a1": {
+          "x": 144,
+          "y": 96
+        },
+        "swamp_a2": {
+          "x": 160,
+          "y": 96
+        },
+        "swamp_edge": {
+          "x": 176,
+          "y": 96
+        },
+        "swamp_edge_a1": {
+          "x": 192,
+          "y": 96
+        },
+        "swamp_edge_a2": {
+          "x": 208,
+          "y": 96
+        },
+        "table": {
+          "x": 224,
+          "y": 96
+        },
+        "table_left_a": {
+          "x": 240,
+          "y": 96
+        },
+        "table_left_b": {
+          "x": 256,
+          "y": 96
+        },
+        "table_middle_a": {
+          "x": 272,
+          "y": 96
+        },
+        "table_middle_b": {
+          "x": 288,
+          "y": 96
+        },
+        "table_right_a": {
+          "x": 304,
+          "y": 96
+        },
+        "table_right_b": {
+          "x": 320,
+          "y": 96
+        },
+        "throne_evil": {
+          "x": 336,
+          "y": 96
+        },
+        "throne_wood": {
+          "x": 352,
+          "y": 96
+        },
+        "tombstone": {
+          "x": 368,
+          "y": 96
+        },
+        "tombstone_broken": {
+          "x": 384,
+          "y": 96
+        },
+        "torch1": {
+          "x": 400,
+          "y": 96
+        },
+        "torch2": {
+          "x": 416,
+          "y": 96
+        },
+        "torch_light1": {
+          "x": 432,
+          "y": 96
+        },
+        "torch_light2": {
+          "x": 448,
+          "y": 96
+        },
+        "trap": {
+          "x": 464,
+          "y": 96
+        },
+        "trapdoor_closed": {
+          "x": 480,
+          "y": 96
+        },
+        "trapdoor_open1": {
+          "x": 496,
+          "y": 96
+        },
+        "trapdoor_open2": {
+          "x": 0,
+          "y": 112
+        },
+        "urns_a": {
+          "x": 16,
+          "y": 112
+        },
+        "urns_b": {
+          "x": 32,
+          "y": 112
+        },
+        "urns_c": {
+          "x": 48,
+          "y": 112
+        },
+        "wall_cave_h_a": {
+          "x": 64,
+          "y": 112
+        },
+        "wall_cave_h_b": {
+          "x": 80,
+          "y": 112
+        },
+        "wall_cave_h_c": {
+          "x": 96,
+          "y": 112
+        },
+        "wall_cave_h_crack": {
+          "x": 112,
+          "y": 112
+        },
+        "wall_cave_h_d": {
+          "x": 128,
+          "y": 112
+        },
+        "wall_cave_h_e": {
+          "x": 144,
+          "y": 112
+        },
+        "wall_cave_pool_empty": {
+          "x": 160,
+          "y": 112
+        },
+        "wall_cave_pool_full": {
+          "x": 176,
+          "y": 112
+        },
+        "wall_cave_stair_down": {
+          "x": 192,
+          "y": 112
+        },
+        "wall_cave_stair_up": {
+          "x": 208,
+          "y": 112
+        },
+        "wall_cave_v_a": {
+          "x": 224,
+          "y": 112
+        },
+        "wall_cave_v_b": {
+          "x": 240,
+          "y": 112
+        },
+        "wall_cave_v_c": {
+          "x": 256,
+          "y": 112
+        },
+        "wall_cave_v_crack": {
+          "x": 272,
+          "y": 112
+        },
+        "wall_cave_v_d": {
+          "x": 288,
+          "y": 112
+        },
+        "wall_cave_v_e": {
+          "x": 304,
+          "y": 112
+        },
+        "wall_crypt_h_a": {
+          "x": 320,
+          "y": 112
+        },
+        "wall_crypt_h_b": {
+          "x": 336,
+          "y": 112
+        },
+        "wall_crypt_h_c": {
+          "x": 352,
+          "y": 112
+        },
+        "wall_crypt_h_crack": {
+          "x": 368,
+          "y": 112
+        },
+        "wall_crypt_h_d": {
+          "x": 384,
+          "y": 112
+        },
+        "wall_crypt_h_e": {
+          "x": 400,
+          "y": 112
+        },
+        "wall_crypt_pool_empty": {
+          "x": 416,
+          "y": 112
+        },
+        "wall_crypt_pool_full": {
+          "x": 432,
+          "y": 112
+        },
+        "wall_crypt_stair_down": {
+          "x": 448,
+          "y": 112
+        },
+        "wall_crypt_stair_up": {
+          "x": 464,
+          "y": 112
+        },
+        "wall_crypt_v_a": {
+          "x": 480,
+          "y": 112
+        },
+        "wall_crypt_v_b": {
+          "x": 496,
+          "y": 112
+        },
+        "wall_crypt_v_c": {
+          "x": 0,
+          "y": 128
+        },
+        "wall_crypt_v_crack": {
+          "x": 16,
+          "y": 128
+        },
+        "wall_crypt_v_d": {
+          "x": 32,
+          "y": 128
+        },
+        "wall_crypt_v_e": {
+          "x": 48,
+          "y": 128
+        },
+        "wall_sewer_h_a": {
+          "x": 64,
+          "y": 128
+        },
+        "wall_sewer_h_b": {
+          "x": 80,
+          "y": 128
+        },
+        "wall_sewer_h_c": {
+          "x": 96,
+          "y": 128
+        },
+        "wall_sewer_h_crack": {
+          "x": 112,
+          "y": 128
+        },
+        "wall_sewer_h_d": {
+          "x": 128,
+          "y": 128
+        },
+        "wall_sewer_h_e": {
+          "x": 144,
+          "y": 128
+        },
+        "wall_sewer_pool_empty": {
+          "x": 160,
+          "y": 128
+        },
+        "wall_sewer_pool_full": {
+          "x": 176,
+          "y": 128
+        },
+        "wall_sewer_stair_down": {
+          "x": 192,
+          "y": 128
+        },
+        "wall_sewer_stair_up": {
+          "x": 208,
+          "y": 128
+        },
+        "wall_sewer_v_a": {
+          "x": 224,
+          "y": 128
+        },
+        "wall_sewer_v_b": {
+          "x": 240,
+          "y": 128
+        },
+        "wall_sewer_v_c": {
+          "x": 256,
+          "y": 128
+        },
+        "wall_sewer_v_crack": {
+          "x": 272,
+          "y": 128
+        },
+        "wall_sewer_v_d": {
+          "x": 288,
+          "y": 128
+        },
+        "wall_sewer_v_e": {
+          "x": 304,
+          "y": 128
+        },
+        "wall_stone_h_a": {
+          "x": 320,
+          "y": 128
+        },
+        "wall_stone_h_b": {
+          "x": 336,
+          "y": 128
+        },
+        "wall_stone_h_c": {
+          "x": 352,
+          "y": 128
+        },
+        "wall_stone_h_crack": {
+          "x": 368,
+          "y": 128
+        },
+        "wall_stone_h_d": {
+          "x": 384,
+          "y": 128
+        },
+        "wall_stone_h_e": {
+          "x": 400,
+          "y": 128
+        },
+        "wall_stone_pool_empty": {
+          "x": 416,
+          "y": 128
+        },
+        "wall_stone_pool_full": {
+          "x": 432,
+          "y": 128
+        },
+        "wall_stone_stair_down": {
+          "x": 448,
+          "y": 128
+        },
+        "wall_stone_stair_up": {
+          "x": 464,
+          "y": 128
+        },
+        "wall_stone_v_a": {
+          "x": 480,
+          "y": 128
+        },
+        "wall_stone_v_b": {
+          "x": 496,
+          "y": 128
+        },
+        "wall_stone_v_c": {
+          "x": 0,
+          "y": 144
+        },
+        "wall_stone_v_crack": {
+          "x": 16,
+          "y": 144
+        },
+        "wall_stone_v_d": {
+          "x": 32,
+          "y": 144
+        },
+        "wall_stone_v_e": {
+          "x": 48,
+          "y": 144
+        },
+        "water": {
+          "x": 64,
+          "y": 144
+        },
+        "water_a1": {
+          "x": 80,
+          "y": 144
+        },
+        "water_a2": {
+          "x": 96,
+          "y": 144
+        },
+        "water_edge": {
+          "x": 112,
+          "y": 144
+        },
+        "water_edge_a1": {
+          "x": 128,
+          "y": 144
+        },
+        "water_edge_a2": {
+          "x": 144,
+          "y": 144
+        },
+        "web": {
+          "x": 160,
+          "y": 144
+        },
+        "web_ne": {
+          "x": 176,
+          "y": 144
+        },
+        "web_nw": {
+          "x": 192,
+          "y": 144
+        },
+        "web_se": {
+          "x": 208,
+          "y": 144
+        },
+        "web_sw": {
+          "x": 224,
+          "y": 144
+        }
+      }
+    }
+  }
+}

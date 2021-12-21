@@ -7,31 +7,51 @@
 #include <utility>
 
 #include "common.h"
+#include "TilesetManager.h"
 
+/*
+ * This set of types and classes are implemented specifically to use the Tiny Dungeon tileset
+ * https://www.oryxdesignlab.com/products/tiny-dungeon-tileset
+ */
 
 struct Tile {
     enum Type : unsigned int {
         FLOOR,
         WALL,
-        DOOR
+        DOOR,
+        OTHER
     };
 
-    Type type{}; // what kind of tile this is
-    int textureIndex{-1}; // which tile to use for rendering; we default to -1 to indicate it's unset
+    enum Style : unsigned int {
+        STONE,
+        SEWER,
+        CRYPT,
+        CAVE
+    };
+
+    Type type{WALL};
+    Style style{STONE};
+    std::string other;
+
+    // This is written in the update() pass to map the specific tile from the tilemap to the vertex array that renders.
+    std::string baseTileName{"wall_stone_v_a"}; // name of the tile in the tileset to use when rendering
+    std::string topTileName{"none"};
 };
 
 class TileMap : public sf::Drawable, public sf::Transformable {
 private:
-    sf::Texture m_tileset;
-    sf::VertexArray m_vertices;
+    sf::VertexArray m_baseLayer;
+    sf::VertexArray m_topLayer;
     sf::Int32 m_width;
     sf::Int32 m_height;
-    sf::Vector2u m_tileSize;
     std::vector<Tile> m_tiles;
-    std::map<std::string, int> m_tileConfig{}; // this should be a map to a vector so we can handle variants
-    Tile m_outOfBoundsTile{Tile::Type::WALL, -1};
+    Tile m_outOfBoundsTile{};
 
     void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
+
+    void updateVertex(sf::VertexArray &va, sf::Vector2u pos, Tileset &ts, std::string &tileName) const;
+
+    void updateTileNames(Tile &tile, sf::Vector2u position);
 
 public:
     TileMap() = delete;
@@ -42,29 +62,19 @@ public:
     explicit TileMap(sf::Vector2u mapSize) : m_tiles(mapSize.x * mapSize.y), m_width{(sf::Int32) mapSize.x},
                                              m_height{(sf::Int32) mapSize.y} {}
 
-    // before you can load a tileset, you must call setTileConfig() with a map that defines what different tile types
-    // map to in the tileset you're loading.
-    void setTileConfig(std::map<std::string, int> tileConfig) {
-        m_tileConfig = std::move(tileConfig);
-    }
-
-    bool load(const std::string &tileset, sf::Vector2u tileSize);
+    bool load();
 
     // update() only needs to be called when you've finished making changes to the TileMap, it should not need to be
-    // called every frame.
+    // called every frame. It will scan through all of the tiles and configure the tileEntityName to the correct type
+    // based on the tilemap configuration.
     void update();
 
-    void setTile(sf::Vector2i position, Tile tile);
+    void setTile(sf::Vector2i position, Tile &tile);
 
     void setTileType(sf::Vector2i position, Tile::Type t);
 
     Tile &getTile(sf::Vector2i position);
 
-    // given a specific Tile, sets the equivalent textureIndex in the tile.
-    void generateTextureIndexForTile(Tile &tile);
-
-    // Refreshes texture indexes for all tiles in the map.
-    void refreshTileTextureIndexes();
 };
 
 

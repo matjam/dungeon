@@ -17,8 +17,3 @@
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <entt/entt.hpp>
 
-#include "gl/glew.h"
-#include "gl/glext.h"
-#include "imgui.h"
-#include "imgui-SFML.h"
-

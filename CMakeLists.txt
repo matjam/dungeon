@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.21)
 
 project(dungeon)
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/bin")
 file(
         GLOB_RECURSE SOURCE_FILES
@@ -10,8 +10,19 @@ file(
         ${PROJECT_SOURCE_DIR}/src/*.h
 )
 
-# Add IMGUI sources
-set(IMGUI_SOURCES imgui/imgui.cpp imgui/imgui_widgets.cpp imgui/imgui_draw.cpp imgui/imgui_tables.cpp imgui/imgui_demo.cpp)
+file(DOWNLOAD "https://raw.githubusercontent.com/vector-of-bool/cmrc/master/CMakeRC.cmake"
+        "${CMAKE_BINARY_DIR}/CMakeRC.cmake")
+include("${CMAKE_BINARY_DIR}/CMakeRC.cmake")
+
+cmrc_add_resource_library(
+        dungeon-resources
+
+        ALIAS dungeon::rc
+        NAMESPACE dungeon
+
+        data/tileset_manifest.json
+        data/tileset.png
+)
 
 # Initialize vcpkg dependencies
 find_package(SFML COMPONENTS system window graphics CONFIG REQUIRED)
@@ -21,9 +32,10 @@ find_package(Boost 1.77 REQUIRED)
 find_package(GLEW REQUIRED)
 find_package(libtcod CONFIG REQUIRED)
 find_package(nlohmann_json CONFIG REQUIRED)
+find_package(libzippp CONFIG REQUIRED)
+find_package(fmt CONFIG REQUIRED)
 
-add_compile_definitions(TRACY_ENABLE)
-add_executable(${PROJECT_NAME} ${SOURCE_FILES} ${IMGUI_SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
 # Enable warnings recommended for new projects.
 if (MSVC)
@@ -33,9 +45,10 @@ else ()
 endif ()
 
 # Ensure the C++17 standard is available.
-target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
 target_include_directories(${PROJECT_NAME} PUBLIC src src/** ./)
 target_link_libraries(${PROJECT_NAME} PRIVATE
+        dungeon::rc
         sfml-system
         sfml-network
         sfml-graphics
@@ -44,5 +57,21 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
         spdlog::spdlog spdlog::spdlog_header_only
         GLEW::GLEW
         libtcod::libtcod
-        nlohmann_json nlohmann_json::nlohmann_json)
+        nlohmann_json nlohmann_json::nlohmann_json
+        libzip::zip libzippp::libzippp
+        fmt::fmt)
 
+
+add_executable(tileset_generator tools/main.cpp tools/TilesetGenerator.cpp)
+target_include_directories(tileset_generator PUBLIC tools/**)
+target_link_libraries(tileset_generator PRIVATE
+        sfml-system
+        sfml-network
+        sfml-graphics
+        sfml-window
+        EnTT::EnTT
+        spdlog::spdlog spdlog::spdlog_header_only
+        GLEW::GLEW
+        libtcod::libtcod
+        nlohmann_json nlohmann_json::nlohmann_json
+        libzip::zip libzippp::libzippp)

@@ -6,6 +6,7 @@
 
 #include <common.h>
 #include "TileMap.h"
+#include "TilesetManager.h"
 
 class World {
 private:
