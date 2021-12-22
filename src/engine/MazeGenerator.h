@@ -14,6 +14,7 @@ private:
     XoshiroCpp::Xoshiro256PlusPlus m_rng;
     sf::Uint32 m_width = 0;
     sf::Uint32 m_height = 0;
+    TileMap m_map;
 
     sf::Uint32 randomInt(sf::Uint32 min, sf::Uint32 max) {
         std::uniform_int_distribution<sf::Uint32> dist(min, max);
@@ -34,7 +35,7 @@ public:
     MazeGenerator(MazeGenerator const &) = delete; // disable copying
     MazeGenerator &operator=(MazeGenerator const &) = delete; // disable assignment
 
-    void create(sf::Uint32 width, sf::Uint32 height, sf::Uint64 seed);
+    void create(sf::Vector2u size, sf::Uint64 seed);
 
     bool generate();
 };

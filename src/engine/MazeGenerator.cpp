@@ -4,12 +4,32 @@
 
 #include "MazeGenerator.h"
 
-void MazeGenerator::create(sf::Uint32 width, sf::Uint32 height, sf::Uint64 seed) {
-    m_width = width;
-    m_height = height;
+void MazeGenerator::create(sf::Vector2u size, sf::Uint64 seed) {
+    m_width = size.x;
+    m_height = size.y;
     m_rng = XoshiroCpp::Xoshiro256PlusPlus(seed);
+    m_map.create(size);
 }
 
 bool MazeGenerator::generate() {
-    return false;
+    placeRooms();
+
+
+    return true;
+}
+
+void MazeGenerator::placeRooms() {
+    
+}
+
+void MazeGenerator::placeHallways() {
+
+}
+
+void MazeGenerator::placeConnectors() {
+
+}
+
+void MazeGenerator::removeDeadEnds() {
+
 }
