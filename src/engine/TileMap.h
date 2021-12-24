@@ -57,6 +57,8 @@ public:
     // based on the tilemap configuration.
     void update();
 
+    void fill(sf::IntRect bounds, Tile tile);
+
     void setTile(sf::Vector2i position, Tile &tile);
 
     void setTileType(sf::Vector2i position, Tile::Type t);

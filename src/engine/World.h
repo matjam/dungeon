@@ -7,13 +7,14 @@
 #include <common.h>
 #include "TileMap.h"
 #include "TilesetManager.h"
+#include "Maze.h"
 
 class World {
 private:
     entt::registry m_registry{};
     sf::Vector2i playerLocation{};
-    float scaleFactor = 0;
     TileMap m_map;
+    Maze m_maze;
 
 public:
     World() = default;

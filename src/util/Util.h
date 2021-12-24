@@ -8,4 +8,3 @@
 #include <cstdlib>
 #include <cstdio>
 
-std::string getEnv(std::string name);

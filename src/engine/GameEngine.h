@@ -9,14 +9,12 @@
 
 class GameEngine {
 private:
-    bool m_running;
-    bool m_fpsDisplayEnabled = false;
-    sf::Int64 m_renderTime;
+    bool m_running{true};
+    sf::Int64 m_renderTime{};
     sf::Mutex m_renderMutex;
     sf::RenderWindow m_window;
     std::shared_ptr<spdlog::logger> m_console;
     sf::Font m_font;
-    std::string m_basePath;
     sf::Text m_fpsDisplayText;
     World m_world;
 

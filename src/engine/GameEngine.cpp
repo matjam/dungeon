@@ -18,11 +18,6 @@ GameEngine::GameEngine() : m_window(sf::VideoMode(1920, 1080), "Game") {
 
     SPDLOG_INFO("intializing GameEngine");
 
-    m_basePath = getEnv("BASEPATH");
-    if (!m_basePath.empty()) {
-        SPDLOG_INFO("BASEPATH set: {}", m_basePath);
-    }
-
     if (!m_font.loadFromFile("data/square.ttf")) {
         SPDLOG_CRITICAL("unable to create game font file");
     }
@@ -47,13 +42,6 @@ void GameEngine::renderThread() {
         renderTime.restart();
         m_world.render(m_window);
         m_renderTime = renderTime.restart().asMicroseconds();
-
-        if (m_fpsDisplayEnabled) {
-            float fpsTime = clock.restart().asSeconds();
-            float fps = 1.f / fpsTime;
-            m_fpsDisplayText.setString(fmt::format("FPS {}", fps));
-            m_window.draw(m_fpsDisplayText);
-        }
 
         m_renderMutex.unlock();
         m_window.display();
@@ -86,7 +74,10 @@ void GameEngine::eventHandlerThread() {
             }
             if (event.type == sf::Event::Resized) {
                 sf::FloatRect visibleArea(0, 0, (float) event.size.width, (float) event.size.height);
+                m_renderMutex.lock();
+                m_window.setActive(true);
                 m_window.setView(sf::View(visibleArea));
+                m_renderMutex.unlock();
             }
         }
         sf::sleep(sf::milliseconds(50));

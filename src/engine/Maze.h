@@ -10,12 +10,8 @@ struct MazeConfig {
     int room_min;
     int room_max;
     int room_attempts;
-    [[maybe_unused]] int extra_door_chance;
     int culling;
-    int sleep;
 };
-
-typedef struct MazeConfig MazeConfig;
 
 enum MazeTileType : char {
     WALL,
@@ -35,30 +31,34 @@ struct MazeTile {
     int region_id;
 };
 
-typedef struct MazeTile MazeTile;
-
 class Maze {
 public:
     Maze() = default;
 
-    Maze(MazeConfig *);
-
-    ~Maze();
-
-    void setConfig(MazeConfig *);
+    void setConfig(MazeConfig);
 
     void generate();
 
-    void render(sf::RenderTarget *);
+    MazeTile getTile(int x, int y);
 
-    bool shouldRender();
 
-    sf::Mutex renderMutex;
-    std::vector<std::shared_ptr<sf::RectangleShape>> tile_shapes;
+private:
+    MazeConfig m_config{};
+    std::vector<MazeTile> m_tile_map;
+    int m_root_region = 0;
+    int m_current_region = 0;
+    int m_total_regions = 0;
+
+    std::unique_ptr<std::default_random_engine> m_rand_engine;
+    std::set<int> m_unconnected_regions;
+
+    std::map<int, int> m_connections;                // old region to new region id
+    std::map<int, std::vector<MazeTile>> m_region_tiles;      // all tiles for a region
+    std::map<int, std::vector<MazeTile>> m_region_connectors; // all connectors for a region
+    std::vector<MazeTile> m_connectors;                  // all connectors that exist
 
     void setTile(MazeTile);
 
-    MazeTile getTile(int x, int y);
 
     MazeTile getAtDirection(int x, int y, char face, int distance);
 
@@ -86,8 +86,6 @@ public:
 
     void updateRegion(int old_region, int new_region);
 
-    bool isUnconnected(int);
-
     bool isDeadEnd(int, int);
 
     bool isNextToDoor(int, int);
@@ -96,27 +94,9 @@ public:
 
     int getRandom(int start, int end);
 
-    sf::Color getRandomColor();
-
     bool mazeWalk(int *x, int *y);
 
     bool mazeHunt(int *x, int *y);
 
     std::array<char, 4> shuffleDirections();
-
-private:
-    struct MazeConfig config;
-    MazeTile *tile_map;
-    int root_region;
-    int current_region;
-    bool dirty;
-    std::unique_ptr<std::default_random_engine> rand_engine;
-    std::map<int, sf::Color> region_colors;
-    std::set<int> unconnected_regions;
-    size_t total_regions;
-
-    std::map<int, int> connections;                // old region to new region id
-    std::map<int, std::vector<MazeTile>> region_tiles;      // all tiles for a region
-    std::map<int, std::vector<MazeTile>> region_connectors; // all connectors for a region
-    std::vector<MazeTile> connectors;                  // all connectors that exist
 };

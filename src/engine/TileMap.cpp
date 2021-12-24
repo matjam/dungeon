@@ -143,3 +143,11 @@ Tile::Type TileMap::getTileType(sf::Vector2i position) {
     sf::Uint32 index = position.x + position.y * m_width;
     return m_tiles.at(index).type;
 }
+
+void TileMap::fill(sf::IntRect bounds, Tile tile) {
+    for (auto y = bounds.top + 1; y < bounds.top + bounds.height - 1; y++) {
+        for (auto x = bounds.left + 1; x < bounds.left + bounds.width - 1; x++) {
+            setTile(sf::Vector2i(x, y), tile);
+        }
+    }
+}

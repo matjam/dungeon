@@ -10,7 +10,6 @@
 
 class Sprites {
 private:
-    TilesetManager &m_tilesetManager = TilesetManager::get();
 
 
 public:
