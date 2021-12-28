@@ -3,8 +3,7 @@
 //
 
 #include "GameEngine.h"
-#include <stdlib.h>
-#include "util/Util.h"
+#include <cstdlib>
 
 
 GameEngine::GameEngine() : m_window(sf::VideoMode(1920, 1080), "Game") {
@@ -16,7 +15,7 @@ GameEngine::GameEngine() : m_window(sf::VideoMode(1920, 1080), "Game") {
 //    spdlog::set_pattern("[%^%8l%$] [%s/%!:%#] %v");
     m_console->set_level(spdlog::level::trace);
 
-    SPDLOG_INFO("intializing GameEngine");
+    SPDLOG_INFO("initializing GameEngine");
 
     if (!m_font.loadFromFile("data/square.ttf")) {
         SPDLOG_CRITICAL("unable to create game font file");
@@ -85,12 +84,12 @@ void GameEngine::eventHandlerThread() {
     SPDLOG_INFO("eventHandlerThread exiting");
 }
 
-void GameEngine::renderTimeThread() {
+void GameEngine::renderTimeThread() const {
     SPDLOG_INFO("renderTimeThread starting");
 
     while (m_running) {
         sf::sleep(sf::seconds(1));
-        SPDLOG_INFO("frametime: {:0.1f}ms", (float) m_renderTime / 1000);
+        SPDLOG_INFO("frame-time: {:0.1f}ms", (float) m_renderTime / 1000);
     }
 
     SPDLOG_INFO("renderTimeThread exiting");
